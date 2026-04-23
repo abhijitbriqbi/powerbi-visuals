@@ -8,7 +8,7 @@
     "description": "Premium Sankey flow diagram for Power BI by Briqlab — briqlab.io. Additional purchase may be required for pro features.",
     "supportUrl": "https://www.briqlab.io/support",
     "websiteUrl": "https://briqlab.io",
-    "gitHubUrl": "https://github.com/briqlab/powerbi-visuals/tree/certification/briqlabFlowSankey-MS"
+    "gitHubUrl": "https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabFlowSankey-MS"
   },
   "apiVersion": "5.3.0",
   "author": {
