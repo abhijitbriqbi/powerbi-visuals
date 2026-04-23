@@ -1,0 +1,354 @@
+@accent:  #0D9488;
+@bg:      #FFFFFF;
+@text:    #111827;
+@muted:   #6B7280;
+@border:  #E2E8F0;
+@surface: #F8FAFA;
+@font:    'Segoe UI', system-ui, sans-serif;
+@anim:    200ms ease-out;
+
+.briq-search-root {
+    position:    relative;
+    width:       100%;
+    height:      100%;
+    font-family: var(--briq-font, @font);
+    font-size:   var(--briq-size, 12px);
+    background:  var(--briq-bg, @bg);
+    color:       var(--briq-text, @text);
+    box-sizing:  border-box;
+    display:     flex;
+    flex-direction: column;
+
+    *, *::before, *::after { box-sizing: border-box; }
+}
+
+.briq-search-content {
+    display:        flex;
+    flex-direction: column;
+    flex:           1 1 auto;
+    padding:        8px;
+    min-height:     0;
+    overflow:       hidden;
+}
+
+.briq-search-input-row {
+    display:       flex;
+    align-items:   center;
+    gap:           6px;
+    border:        1.5px solid var(--briq-border, @border);
+    border-radius: 8px;
+    padding:       6px 8px;
+    background:    var(--briq-bg, @bg);
+    transition:    border-color @anim, box-shadow @anim;
+
+    &:focus-within {
+        border-color: var(--briq-accent, @accent);
+        box-shadow:   0 0 0 3px fade(@accent, 15%);
+    }
+}
+
+.briq-search-icon {
+    color:       @muted;
+    flex-shrink: 0;
+    display:     flex;
+    align-items: center;
+}
+
+.briq-search-input {
+    flex:        1;
+    border:      none;
+    outline:     none;
+    background:  transparent;
+    font-family: inherit;
+    font-size:   inherit;
+    color:       inherit;
+    min-width:   0;
+
+    &::placeholder { color: @muted; }
+}
+
+.briq-search-clear {
+    border:      none;
+    background:  transparent;
+    cursor:      pointer;
+    color:       @muted;
+    font-size:   11px;
+    padding:     2px 4px;
+    border-radius: 4px;
+    line-height: 1;
+    transition:  background @anim;
+
+    &:hover { background: @surface; color: @text; }
+    &.hidden { display: none; }
+}
+
+.briq-search-count {
+    font-size:  10px;
+    color:      @muted;
+    padding:    3px 2px 1px;
+
+    &.hidden { display: none; }
+}
+
+.briq-search-list {
+    flex:       1 1 auto;
+    overflow-y: auto;
+    margin-top: 4px;
+
+    &::-webkit-scrollbar { width: 4px; }
+    &::-webkit-scrollbar-track { background: @surface; }
+    &::-webkit-scrollbar-thumb { background: @border; border-radius: 2px; }
+}
+
+.briq-search-item {
+    display:        flex;
+    align-items:    center;
+    justify-content: space-between;
+    gap:            8px;
+    padding:        6px 8px;
+    border-radius:  6px;
+    cursor:         pointer;
+    transition:     background @anim;
+
+    &:hover { background: @surface; }
+
+    &.selected {
+        background:  fade(@accent, 10%);
+        color:       var(--briq-accent, @accent);
+        font-weight: 500;
+    }
+
+    mark {
+        background:  fade(@accent, 20%);
+        color:       var(--briq-accent, @accent);
+        border-radius: 2px;
+        padding:     0 1px;
+        font-weight: 600;
+    }
+}
+
+.briq-search-item-label {
+    flex:          1;
+    overflow:      hidden;
+    text-overflow: ellipsis;
+    white-space:   nowrap;
+}
+
+.briq-search-item-value {
+    color:      @muted;
+    font-size:  11px;
+    white-space: nowrap;
+}
+
+.briq-search-empty {
+    text-align: center;
+    color:      @muted;
+    font-size:  12px;
+    padding:    24px 8px;
+}
+
+.briq-search-trial-badge,
+.briq-search-pro-badge {
+    position:    absolute;
+    bottom:      6px;
+    right:       8px;
+    font-size:   9px;
+    padding:     2px 7px;
+    border-radius: 10px;
+    pointer-events: none;
+
+    &.hidden { display: none; }
+}
+.briq-search-trial-badge {
+    background: fade(#10B981, 12%);
+    border:     1px solid fade(#10B981, 30%);
+    color:      #059669;
+}
+.briq-search-pro-badge {
+    background: fade(#10B981, 12%);
+    border:     1px solid fade(#10B981, 30%);
+    color:      #059669;
+    font-weight: 600;
+}
+
+.briq-search-overlay {
+    position:  absolute;
+    inset:     0;
+    z-index:   100;
+    display:   flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.15);
+    padding:   12px;
+
+    &.hidden { display: none; }
+}
+
+.briq-search-overlay-card {
+    background:    #fff;
+    border:        1px solid @border;
+    border-radius: 10px;
+    box-shadow:    0 8px 32px rgba(0,0,0,0.15);
+    padding:       20px 24px;
+    max-width:     280px;
+    width:         100%;
+    text-align:    center;
+    font-family:   @font;
+
+    .briq-ov-title { font-size: 16px; font-weight: 700; color: #111827; margin-bottom: 8px; }
+    .briq-ov-body  { font-size: 12px; color: @muted; margin-bottom: 14px; line-height: 1.5; }
+    .briq-ov-btn {
+        display:       block;
+        padding:       9px 16px;
+        background:    #F97316;
+        color:         #fff;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size:     13px;
+        font-weight:   600;
+        margin-bottom: 10px;
+        transition:    background 200ms;
+        &:hover { background: #ea6c0b; }
+    }
+    .briq-ov-sub { font-size: 10px; color: @muted; line-height: 1.4; }
+}
+
+// ── Briqlab Trial Overlay CSS
+// Do not edit manually — regenerated by fix-overlay-css.js
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Hidden utility
+.hidden { display: none !important; }
+
+// Trial badge (bottom-left — shows "Trial: N days remaining")
+.briqlab-trial-badge {
+    position:      absolute;
+    bottom:        8px;
+    left:          8px;
+    z-index:       50;
+    padding:       3px 8px;
+    background:    rgba(16, 185, 129, 0.12);
+    border:        1px solid rgba(16, 185, 129, 0.30);
+    border-radius: 12px;
+    font-family:   'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size:     9px;
+    color:         #10B981;
+    font-weight:   500;
+    pointer-events: none;
+    white-space:   nowrap;
+    &.hidden { display: none !important; }
+}
+
+// Pro badge (bottom-right — shows "✓ Pro Active")
+.briqlab-pro-badge {
+    position:      absolute;
+    bottom:        8px;
+    right:         8px;
+    z-index:       50;
+    padding:       3px 8px;
+    background:    rgba(16, 185, 129, 0.12);
+    border:        1px solid rgba(16, 185, 129, 0.30);
+    border-radius: 12px;
+    font-family:   'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size:     9px;
+    color:         #10B981;
+    font-weight:   500;
+    pointer-events: none;
+    white-space:   nowrap;
+    &.hidden { display: none !important; }
+}
+
+// Invalid-key error (bottom-right — shows "✗ Invalid key")
+.briqlab-key-error {
+    position:      absolute;
+    bottom:        30px;
+    right:         8px;
+    z-index:       50;
+    font-family:   'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size:     9px;
+    color:         #EF4444;
+    pointer-events: none;
+    &.hidden { display: none !important; }
+}
+
+// Trial overlay (full-cover backdrop — hidden until trial expires)
+.briqlab-trial-overlay {
+    position:        absolute;
+    inset:           0;
+    z-index:         100;
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    background:      rgba(255, 255, 255, 0.15);
+    padding:         16px;
+    &.hidden { display: none !important; }
+}
+
+// Trial card (white branded card centred in the overlay)
+.briqlab-trial-card {
+    background:    #FFFFFF;
+    border:        1px solid #E2E8F0;
+    border-radius: 8px;
+    box-shadow:    0 8px 32px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.10);
+    padding:       24px 28px;
+    max-width:     320px;
+    width:         100%;
+    text-align:    center;
+    font-family:   'Segoe UI', system-ui, -apple-system, sans-serif;
+    box-sizing:    border-box;
+
+    .trial-icon {
+        width:   40px;
+        height:  40px;
+        margin:  0 auto 12px;
+        opacity: 0.5;
+        display: block;
+    }
+
+    .trial-title {
+        font-size:   18px;
+        font-weight: 700;
+        color:       #111827;
+        margin:      0 0 8px;
+    }
+
+    .trial-body {
+        font-size:   13px;
+        color:       #6B7280;
+        margin:      0 0 16px;
+        line-height: 1.55;
+    }
+
+    .trial-btn {
+        display:         block;
+        width:           100%;
+        padding:         10px 20px;
+        background:      #F97316;
+        color:           #fff;
+        border:          none;
+        border-radius:   8px;
+        font-family:     'Segoe UI', system-ui, -apple-system, sans-serif;
+        font-size:       14px;
+        font-weight:     600;
+        cursor:          pointer;
+        transition:      background 300ms ease-out, transform 150ms;
+        text-decoration: none;
+        line-height:     1.4;
+        box-sizing:      border-box;
+
+        &:hover {
+            background: #e8650a;
+            transform:  translateY(-1px);
+        }
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    .trial-subtext {
+        font-size:   11px;
+        color:       #6B7280;
+        margin:      12px 0 0;
+        line-height: 1.5;
+    }
+}

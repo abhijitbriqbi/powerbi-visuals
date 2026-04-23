@@ -1,0 +1,569 @@
+// ── Briqlab Design System ──────────────────────────────────────────────────────
+@teal:        #0D9488;
+@orange:      #F97316;
+@success:     #10B981;
+@warning:     #F59E0B;
+@danger:      #EF4444;
+@bg:          #FFFFFF;
+@surface:     #F8FAFA;
+@border:      #E2E8F0;
+@text:        #111827;
+@muted:       #6B7280;
+@font:        'Segoe UI', system-ui, -apple-system, sans-serif;
+@radius-card: 8px;
+@radius-seg:  4px;
+@anim:        300ms ease-out;
+
+// ── Root container ─────────────────────────────────────────────────────────────
+.briqlab-drill-bubble {
+    position:    relative;
+    width:       100%;
+    height:      100%;
+    overflow:    hidden;
+    font-family: @font;
+    background:  @bg;
+    box-sizing:  border-box;
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+}
+
+// ── Visual content wrapper (gets blurred on trial expiry) ─────────────────────
+.briqlab-visual-content {
+    position:        relative;
+    width:           100%;
+    height:          100%;
+    display:         flex;
+    flex-direction:  column;
+    transition:      filter @anim;
+
+    &.blurred {
+        filter:         blur(4px);
+        pointer-events: none;
+        user-select:    none;
+    }
+}
+
+// ── Chart area ─────────────────────────────────────────────────────────────────
+.briqlab-chart-area {
+    position:   relative;
+    flex:       1 1 auto;
+    overflow:   hidden;
+    min-height: 0;
+}
+
+.briqlab-svg {
+    display:  block;
+    overflow: visible;
+}
+
+// ── Breadcrumb ─────────────────────────────────────────────────────────────────
+.briqlab-breadcrumb {
+    display:     flex;
+    align-items: center;
+    flex-wrap:   wrap;
+    gap:         2px 4px;
+    padding:     4px 10px 2px;
+    font-size:   11px;
+    color:       @muted;
+    min-height:  22px;
+    line-height: 1.4;
+
+    .crumb {
+        cursor:       pointer;
+        color:        @teal;
+        padding:      1px 4px;
+        border-radius: @radius-seg;
+        transition:   background @anim;
+
+        &:hover {
+            background: fade(@teal, 10%);
+        }
+
+        &.crumb-current {
+            color:  @text;
+            cursor: default;
+
+            &:hover {
+                background: transparent;
+            }
+        }
+    }
+
+    .crumb-sep {
+        color:       @border;
+        font-size:   10px;
+        line-height: 1;
+    }
+
+    &.hidden {
+        display: none;
+    }
+}
+
+// ── Drill-up button ────────────────────────────────────────────────────────────
+.briqlab-drill-up {
+    position:    absolute;
+    top:         6px;
+    left:        8px;
+    display:     flex;
+    align-items: center;
+    gap:         4px;
+    padding:     4px 10px;
+    background:  @surface;
+    border:      1px solid @border;
+    border-radius: 20px;
+    font-family: @font;
+    font-size:   11px;
+    color:       @teal;
+    cursor:      pointer;
+    z-index:     10;
+    transition:  all @anim;
+    line-height: 1.4;
+
+    &:hover {
+        background:   @teal;
+        color:        #fff;
+        border-color: @teal;
+    }
+
+    &.hidden {
+        display: none;
+    }
+}
+
+// ── Axes ───────────────────────────────────────────────────────────────────────
+.axis-group {
+    .domain {
+        stroke: @border;
+    }
+
+    .tick line {
+        stroke: @border;
+    }
+
+    .tick text {
+        fill:        @muted;
+        font-family: @font;
+        font-size:   10px;
+    }
+}
+
+.axis-grid-line {
+    stroke:       @border;
+    stroke-width: 1;
+    opacity:      0.5;
+}
+
+.axis-label {
+    font-family: @font;
+    font-size:   11px;
+    fill:        @muted;
+    text-anchor: middle;
+}
+
+// ── Bubbles ────────────────────────────────────────────────────────────────────
+.bubble-circle {
+    cursor:     pointer;
+    transition: filter 200ms ease-out, opacity 200ms ease-out;
+
+    &:hover {
+        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.22));
+    }
+}
+
+.bubble-circle-faded {
+    opacity: 0.3;
+}
+
+.bubble-circle-selected {
+    opacity: 1;
+    stroke:  #fff;
+    stroke-width: 2.5;
+}
+
+// ── Packed mode parent ring ────────────────────────────────────────────────────
+.packed-parent-ring {
+    fill:         none;
+    stroke:       @teal;
+    stroke-width: 2;
+    stroke-dasharray: 5 3;
+    opacity:      0.4;
+    pointer-events: none;
+}
+
+.packed-parent-label {
+    font-family:  @font;
+    font-size:    10px;
+    fill:         @teal;
+    opacity:      0.7;
+    text-anchor:  middle;
+    pointer-events: none;
+}
+
+// ── Bubble labels ──────────────────────────────────────────────────────────────
+.bubble-label {
+    font-family:   @font;
+    font-size:     11px;
+    fill:          #374151;
+    pointer-events: none;
+    text-anchor:   middle;
+    dominant-baseline: middle;
+}
+
+.bubble-label-inside {
+    fill: #ffffff;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.bubble-label-outside {
+    fill: @text;
+}
+
+// ── Legend ─────────────────────────────────────────────────────────────────────
+.briqlab-legend {
+    display:       flex;
+    flex-wrap:     wrap;
+    gap:           6px 14px;
+    padding:       6px 10px 8px;
+    font-size:     11px;
+    color:         @text;
+    flex:          0 0 auto;
+    max-height:    80px;
+    overflow-y:    auto;
+    align-content: flex-start;
+
+    &.legend-top    { order: -1; }
+    &.legend-bottom { order:  1; }
+    &.legend-left,
+    &.legend-right {
+        flex-direction: column;
+        max-height:     none;
+        width:          130px;
+        flex:           0 0 130px;
+        padding-top:    12px;
+        overflow-y:     auto;
+    }
+    &.legend-hidden { display: none; }
+}
+
+.briqlab-legend-item {
+    display:     flex;
+    align-items: center;
+    gap:         5px;
+    cursor:      pointer;
+    padding:     2px 4px;
+    border-radius: @radius-seg;
+    transition:  background @anim;
+    white-space: nowrap;
+    max-width:   160px;
+
+    &:hover {
+        background: @surface;
+    }
+
+    .legend-swatch {
+        width:         10px;
+        height:        10px;
+        border-radius: 50%;
+        flex-shrink:   0;
+    }
+
+    .legend-name {
+        overflow:      hidden;
+        text-overflow: ellipsis;
+        white-space:   nowrap;
+        max-width:     110px;
+        color:         @text;
+    }
+
+    .legend-value {
+        color:       @muted;
+        font-size:   10px;
+        white-space: nowrap;
+    }
+}
+
+// ── Tooltip card ───────────────────────────────────────────────────────────────
+.briqlab-tooltip {
+    position:       fixed;
+    z-index:        9999;
+    background:     @bg;
+    border:         1px solid @border;
+    border-radius:  @radius-card;
+    box-shadow:     0 4px 16px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.08);
+    padding:        10px 12px;
+    min-width:      160px;
+    max-width:      260px;
+    pointer-events: none;
+    opacity:        0;
+    transition:     opacity 150ms ease-out, transform 150ms ease-out;
+    transform:      translateY(4px);
+    font-family:    @font;
+    font-size:      12px;
+    color:          @text;
+
+    &.visible {
+        opacity:   1;
+        transform: translateY(0);
+    }
+
+    .tooltip-header {
+        display:     flex;
+        align-items: center;
+        gap:         7px;
+        margin-bottom: 6px;
+    }
+
+    .tooltip-dot {
+        width:         10px;
+        height:        10px;
+        border-radius: 50%;
+        flex-shrink:   0;
+    }
+
+    .tooltip-name {
+        font-weight:   600;
+        font-size:     13px;
+        color:         @text;
+        white-space:   nowrap;
+        overflow:      hidden;
+        text-overflow: ellipsis;
+        max-width:     200px;
+    }
+
+    .tooltip-row {
+        display:         flex;
+        justify-content: space-between;
+        align-items:     center;
+        gap:             12px;
+        padding:         2px 0;
+        color:           @muted;
+        font-size:       11.5px;
+
+        .tooltip-row-label { color: @muted; }
+
+        .tooltip-row-value {
+            color:       @text;
+            font-weight: 500;
+        }
+    }
+
+    .tooltip-divider {
+        height:     1px;
+        background: @border;
+        margin:     6px 0;
+    }
+
+    .tooltip-extra-row {
+        display:         flex;
+        justify-content: space-between;
+        gap:             12px;
+        font-size:       11px;
+        color:           @muted;
+        padding:         1px 0;
+    }
+}
+
+// ── Empty state ────────────────────────────────────────────────────────────────
+.briqlab-empty {
+    display:         flex;
+    flex-direction:  column;
+    align-items:     center;
+    justify-content: center;
+    width:           100%;
+    height:          100%;
+    gap:             12px;
+    color:           @muted;
+    font-family:     @font;
+    text-align:      center;
+    padding:         20px;
+
+    .empty-icon {
+        width:   56px;
+        height:  56px;
+        opacity: 0.4;
+    }
+
+    .empty-title {
+        font-size:   16px;
+        font-weight: 600;
+        color:       @text;
+        margin:      0;
+    }
+
+    .empty-body {
+        font-size:   13px;
+        color:       @muted;
+        margin:      0;
+        max-width:   220px;
+        line-height: 1.5;
+    }
+}
+
+// ── Responsive: very small visuals ────────────────────────────────────────────
+.briqlab-drill-bubble.tiny {
+    .bubble-label,
+    .axis-group,
+    .axis-label,
+    .briqlab-legend,
+    .briqlab-breadcrumb,
+    .briqlab-drill-up {
+        display: none;
+    }
+}
+
+// ── Scrollbar styling for legend ──────────────────────────────────────────────
+.briqlab-legend::-webkit-scrollbar {
+    width:  4px;
+    height: 4px;
+}
+.briqlab-legend::-webkit-scrollbar-track {
+    background: @surface;
+}
+.briqlab-legend::-webkit-scrollbar-thumb {
+    background:    @border;
+    border-radius: 2px;
+}
+
+// ── Briqlab Trial Overlay CSS
+// Do not edit manually — regenerated by fix-overlay-css.js
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Hidden utility
+.hidden { display: none !important; }
+
+// Trial badge (bottom-left — shows "Trial: N days remaining")
+.briqlab-trial-badge {
+    position:      absolute;
+    bottom:        8px;
+    left:          8px;
+    z-index:       50;
+    padding:       3px 8px;
+    background:    rgba(16, 185, 129, 0.12);
+    border:        1px solid rgba(16, 185, 129, 0.30);
+    border-radius: 12px;
+    font-family:   'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size:     9px;
+    color:         #10B981;
+    font-weight:   500;
+    pointer-events: none;
+    white-space:   nowrap;
+    &.hidden { display: none !important; }
+}
+
+// Pro badge (bottom-right — shows "✓ Pro Active")
+.briqlab-pro-badge {
+    position:      absolute;
+    bottom:        8px;
+    right:         8px;
+    z-index:       50;
+    padding:       3px 8px;
+    background:    rgba(16, 185, 129, 0.12);
+    border:        1px solid rgba(16, 185, 129, 0.30);
+    border-radius: 12px;
+    font-family:   'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size:     9px;
+    color:         #10B981;
+    font-weight:   500;
+    pointer-events: none;
+    white-space:   nowrap;
+    &.hidden { display: none !important; }
+}
+
+// Invalid-key error (bottom-right — shows "✗ Invalid key")
+.briqlab-key-error {
+    position:      absolute;
+    bottom:        30px;
+    right:         8px;
+    z-index:       50;
+    font-family:   'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size:     9px;
+    color:         #EF4444;
+    pointer-events: none;
+    &.hidden { display: none !important; }
+}
+
+// Trial overlay (full-cover backdrop — hidden until trial expires)
+.briqlab-trial-overlay {
+    position:        absolute;
+    inset:           0;
+    z-index:         100;
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    background:      rgba(255, 255, 255, 0.15);
+    padding:         16px;
+    &.hidden { display: none !important; }
+}
+
+// Trial card (white branded card centred in the overlay)
+.briqlab-trial-card {
+    background:    #FFFFFF;
+    border:        1px solid #E2E8F0;
+    border-radius: 8px;
+    box-shadow:    0 8px 32px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.10);
+    padding:       24px 28px;
+    max-width:     320px;
+    width:         100%;
+    text-align:    center;
+    font-family:   'Segoe UI', system-ui, -apple-system, sans-serif;
+    box-sizing:    border-box;
+
+    .trial-icon {
+        width:   40px;
+        height:  40px;
+        margin:  0 auto 12px;
+        opacity: 0.5;
+        display: block;
+    }
+
+    .trial-title {
+        font-size:   18px;
+        font-weight: 700;
+        color:       #111827;
+        margin:      0 0 8px;
+    }
+
+    .trial-body {
+        font-size:   13px;
+        color:       #6B7280;
+        margin:      0 0 16px;
+        line-height: 1.55;
+    }
+
+    .trial-btn {
+        display:         block;
+        width:           100%;
+        padding:         10px 20px;
+        background:      #F97316;
+        color:           #fff;
+        border:          none;
+        border-radius:   8px;
+        font-family:     'Segoe UI', system-ui, -apple-system, sans-serif;
+        font-size:       14px;
+        font-weight:     600;
+        cursor:          pointer;
+        transition:      background 300ms ease-out, transform 150ms;
+        text-decoration: none;
+        line-height:     1.4;
+        box-sizing:      border-box;
+
+        &:hover {
+            background: #e8650a;
+            transform:  translateY(-1px);
+        }
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    .trial-subtext {
+        font-size:   11px;
+        color:       #6B7280;
+        margin:      12px 0 0;
+        line-height: 1.5;
+    }
+}

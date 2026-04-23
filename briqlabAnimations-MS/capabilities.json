@@ -1,0 +1,148 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Label",
+            "name": "label",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Value",
+            "name": "value",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Target",
+            "name": "target",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "animationSettings": {
+            "properties": {
+                "duration": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "easing": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "autoPlay": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showProgressBar": {
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        },
+        "styleSettings": {
+            "properties": {
+                "primaryColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "secondaryColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "backgroundColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "fontFamily": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "valueFontSize": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "labelFontSize": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "cardLayout": {
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "label": {
+                        "max": 1
+                    },
+                    "value": {
+                        "max": 1
+                    },
+                    "target": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "label"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {
+                            "count": 12
+                        }
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "value"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "target"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        }
+    },
+    "supportsLandingPage": true,
+    "supportsEmptyDataView": true,
+    "privileges": []
+}

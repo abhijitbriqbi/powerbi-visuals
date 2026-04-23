@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="12" fill="#F0FDFA"/>
+  <!-- Card background -->
+  <rect x="8" y="16" width="84" height="68" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <!-- Label placeholder bar -->
+  <rect x="18" y="26" width="30" height="6" rx="3" fill="#CBD5E1"/>
+  <!-- Primary value bar (large, teal) -->
+  <rect x="18" y="38" width="64" height="14" rx="4" fill="#0D9488"/>
+  <!-- Secondary value bar (smaller) -->
+  <rect x="18" y="58" width="42" height="6" rx="3" fill="#5EEAD4"/>
+  <!-- Trend sparkline -->
+  <polyline points="18,74 30,68 42,71 56,62 68,66 82,56"
+            fill="none" stroke="#14B8A6" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

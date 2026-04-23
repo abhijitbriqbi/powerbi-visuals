@@ -1,0 +1,136 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Search Field",
+            "name": "searchField",
+            "kind": "Grouping",
+            "description": "The text column to search and filter on"
+        },
+        {
+            "displayName": "Display Value",
+            "name": "displayValue",
+            "kind": "Measure",
+            "description": "Optional numeric value shown next to each result"
+        }
+    ],
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "searchField": {
+                        "max": 1
+                    },
+                    "displayValue": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "searchField"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {
+                            "count": 1000
+                        }
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "displayValue"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "objects": {
+        "searchSettings": {
+            "properties": {
+                "placeholder": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "maxResults": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "showResultCount": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "caseSensitive": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontFamily": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "fontSize": {
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "colorSettings": {
+            "properties": {
+                "accentColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "backgroundColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "textColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "borderColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        }
+    },
+    "supportsLandingPage": true,
+    "supportsEmptyDataView": true,
+    "privileges": []
+}

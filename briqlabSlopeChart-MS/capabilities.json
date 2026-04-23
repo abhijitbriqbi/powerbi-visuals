@@ -1,0 +1,148 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Entity",
+            "name": "entity",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Period 1 Value",
+            "name": "period1Value",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Period 2 Value",
+            "name": "period2Value",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Category",
+            "name": "category",
+            "kind": "Grouping"
+        }
+    ],
+    "objects": {
+        "chartSettings": {
+            "properties": {
+                "period1Label": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "period2Label": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "colorBy": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "lineWidth": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "scaleLine": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showSlopeLabels": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showRankChange": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "dotSize": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "fontFamily": {
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        },
+        "summarySettings": {
+            "properties": {
+                "showSummary": {
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "entity": {
+                        "max": 1
+                    },
+                    "period1Value": {
+                        "max": 1
+                    },
+                    "period2Value": {
+                        "max": 1
+                    },
+                    "category": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "entity"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "category"
+                            }
+                        }
+                    ],
+                    "dataReductionAlgorithm": {
+                        "top": {
+                            "count": 100
+                        }
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "period1Value"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "period2Value"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        }
+    },
+    "supportsLandingPage": true,
+    "supportsEmptyDataView": true,
+    "privileges": []
+}

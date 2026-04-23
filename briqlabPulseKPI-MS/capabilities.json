@@ -1,0 +1,191 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Primary Value",
+            "name": "measure",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Target",
+            "name": "target",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Comparison",
+            "name": "comparison",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Trend Series",
+            "name": "trendValue",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Trend Date",
+            "name": "trendDate",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Label",
+            "name": "label",
+            "kind": "Grouping"
+        }
+    ],
+    "objects": {
+        "cardSettings": {
+            "properties": {
+                "cardSize": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "showPulseRing": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showSparkline": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showInsightText": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showProgressBar": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "currencyPrefix": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "valueFormat": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "fontFamily": {
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        },
+        "colorSettings": {
+            "properties": {
+                "primaryColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "aboveTargetColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "belowTargetColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "backgroundColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "measure": {
+                        "max": 1
+                    },
+                    "target": {
+                        "max": 1
+                    },
+                    "comparison": {
+                        "max": 1
+                    },
+                    "trendValue": {
+                        "max": 1
+                    },
+                    "trendDate": {
+                        "max": 1
+                    },
+                    "label": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "trendDate"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {
+                            "count": 500
+                        }
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "measure"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "target"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "comparison"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "trendValue"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        }
+    },
+    "supportsLandingPage": true,
+    "supportsEmptyDataView": true,
+    "privileges": []
+}

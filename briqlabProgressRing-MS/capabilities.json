@@ -1,0 +1,135 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Category",
+            "name": "category",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Actual Value",
+            "name": "actualValue",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Target Value",
+            "name": "targetValue",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "ringSettings": {
+            "properties": {
+                "trackWidth": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "ringGap": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "maxRings": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "autoColor": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showMilestones": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontFamily": {
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        },
+        "labelSettings": {
+            "properties": {
+                "showLabels": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "labelFontSize": {
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "centerSettings": {
+            "properties": {
+                "showCenter": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "summaryMetric": {
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "category": {
+                        "max": 1
+                    },
+                    "actualValue": {
+                        "max": 1
+                    },
+                    "targetValue": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {
+                            "count": 6
+                        }
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "actualValue"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "targetValue"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        }
+    },
+    "supportsLandingPage": true,
+    "supportsEmptyDataView": true,
+    "privileges": []
+}

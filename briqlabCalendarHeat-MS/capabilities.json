@@ -1,0 +1,135 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Date",
+            "name": "date",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Value",
+            "name": "value",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "layoutSettings": {
+            "properties": {
+                "startOfWeek": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "showMonthLabels": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showDayLabels": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showSummaryStats": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "highlightWeekends": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontFamily": {
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        },
+        "colorSettings": {
+            "properties": {
+                "colorScale": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "lowColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "highColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "nullColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "colorSteps": {
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "date": {
+                        "max": 1
+                    },
+                    "value": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "date"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {
+                            "count": 400
+                        }
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "value"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        }
+    },
+    "supportsLandingPage": true,
+    "supportsEmptyDataView": true,
+    "privileges": []
+}

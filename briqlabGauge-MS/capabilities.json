@@ -1,0 +1,241 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Value",
+            "name": "measure",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Min Value",
+            "name": "minValue",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Max Value",
+            "name": "maxValue",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Target",
+            "name": "target",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "gaugeSettings": {
+            "properties": {
+                "gaugeType": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "arcThickness": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "showNeedle": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showTicks": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "tickCount": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "showTarget": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "targetColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "manualColorMode": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "manualColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "valueFontSize": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "showPctComplete": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "showMinMax": {
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        },
+        "zoneSettings": {
+            "properties": {
+                "showZones": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "zone1MaxPct": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "zone2MaxPct": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "zone1Color": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "zone2Color": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "zone3Color": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "trackColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "fontSettings": {
+            "properties": {
+                "fontFamily": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "boldValue": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "valuePrefix": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "valueSuffix": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "valueColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "measure": {
+                        "max": 1
+                    },
+                    "minValue": {
+                        "max": 1
+                    },
+                    "maxValue": {
+                        "max": 1
+                    },
+                    "target": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "measure"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "minValue"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "maxValue"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "target"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        }
+    },
+    "supportsLandingPage": true,
+    "supportsEmptyDataView": true,
+    "privileges": []
+}

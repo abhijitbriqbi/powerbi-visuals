@@ -1,0 +1,286 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Category",
+            "name": "category",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Values",
+            "name": "measure",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Tooltip Fields",
+            "name": "tooltipValues",
+            "kind": "Measure"
+        }
+    ],
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "category": {
+                        "max": 1
+                    },
+                    "measure": {
+                        "max": 1
+                    },
+                    "tooltipValues": {
+                        "max": 5
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {
+                            "count": 1000
+                        }
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "measure"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "tooltipValues"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "drilldown": {
+        "roles": [
+            "category"
+        ]
+    },
+    "objects": {
+        "chartStyle": {
+            "properties": {
+                "chartType": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "innerRadius": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "padAngle": {
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "centerDisplay": {
+            "properties": {
+                "showCenter": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "centerLabel": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "centerValueSize": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "centerLabelSize": {
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "segments": {
+            "properties": {
+                "color1": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "color2": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "color3": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "color4": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "color5": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "color6": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "color7": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "color8": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "color9": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "color10": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "labelSettings": {
+            "properties": {
+                "showLabels": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "labelFontSize": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "labelThreshold": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "labelFormat": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "labelColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "boldLabels": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontFamily": {
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        },
+        "legendSettings": {
+            "properties": {
+                "showLegend": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "legendPosition": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "legendFontSize": {
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "tooltipSettings": {
+            "properties": {
+                "showTooltip": {
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        }
+    },
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        }
+    },
+    "supportsLandingPage": true,
+    "supportsEmptyDataView": true,
+    "privileges": []
+}

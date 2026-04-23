@@ -1,0 +1,133 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "X Category",
+            "name": "xCategory",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Segment",
+            "name": "segment",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "X Value",
+            "name": "xValue",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Y Value",
+            "name": "yValue",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "chartSettings": {
+            "properties": {
+                "barGap": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "showSegmentLabels": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "labelThreshold": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "showXScale": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fontFamily": {
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        },
+        "legendSettings": {
+            "properties": {
+                "showLegend": {
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "legendPosition": {
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "xCategory": {
+                        "max": 1
+                    },
+                    "segment": {
+                        "max": 1
+                    },
+                    "xValue": {
+                        "max": 1
+                    },
+                    "yValue": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "xCategory"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "segment"
+                            }
+                        }
+                    ],
+                    "dataReductionAlgorithm": {
+                        "top": {
+                            "count": 200
+                        }
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "xValue"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "yValue"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        }
+    },
+    "supportsLandingPage": true,
+    "supportsEmptyDataView": true,
+    "privileges": []
+}

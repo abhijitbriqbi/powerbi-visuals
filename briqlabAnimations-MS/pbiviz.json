@@ -1,0 +1,27 @@
+{
+  "visual": {
+    "name": "briqlabAnimations",
+    "displayName": "Briqlab Animated Counter",
+    "guid": "briqlabAnimations3A7B2C1D4E5F6A7B8C9D0E1F2A3B4C5D",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "description": "Animated KPI counter visual for Power BI by Briqlab — briqlab.io. Additional purchase may be required for pro features.",
+    "supportUrl": "https://www.briqlab.io/support",
+    "websiteUrl": "https://briqlab.io",
+    "gitHubUrl": "https://github.com/briqlab/powerbi-visuals/tree/certification/briqlabAnimations-MS"
+  },
+  "apiVersion": "5.3.0",
+  "author": {
+    "name": "Briqlab",
+    "email": "abhijit@briqlab.io"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": null,
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": null,
+  "stringResources": [],
+  "version": "1.0.0.0"
+}

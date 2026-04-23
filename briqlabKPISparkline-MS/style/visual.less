@@ -1,0 +1,424 @@
+// ── Briqlab Design Tokens ──────────────────────────────────────────────────────
+@teal:        #0D9488;
+@green:       #10B981;
+@red:         #EF4444;
+@orange:      #F97316;
+@bg:          #FFFFFF;
+@surface:     #F8FAFA;
+@border:      #E2E8F0;
+@text:        #111827;
+@muted:       #6B7280;
+@font:        'Segoe UI', system-ui, -apple-system, sans-serif;
+@anim:        300ms ease-out;
+
+// ── Root ───────────────────────────────────────────────────────────────────────
+.briqlab-kpi-sparkline {
+    position:    relative;
+    width:       100%;
+    height:      100%;
+    overflow:    hidden;
+    font-family: @font;
+    box-sizing:  border-box;
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+}
+
+// ── Content wrapper (blurred on trial expiry) ──────────────────────────────────
+.briqlab-visual-content {
+    width:      100%;
+    height:     100%;
+    position:   relative;
+    display:    flex;
+    flex-direction: column;
+    transition: filter @anim;
+
+    &.blurred {
+        filter:         blur(4px);
+        pointer-events: none;
+        user-select:    none;
+    }
+}
+
+// ── Card shell ─────────────────────────────────────────────────────────────────
+.kpi-card-shell {
+    position:    relative;
+    width:       100%;
+    height:      100%;
+    display:     flex;
+    flex-direction: row;
+    border-radius: 8px;
+    overflow:    hidden;
+    cursor:      pointer;
+    transition:  box-shadow @anim;
+
+    &:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
+    }
+}
+
+// ── Left accent stripe ─────────────────────────────────────────────────────────
+.kpi-accent-stripe {
+    width:         4px;
+    flex-shrink:   0;
+    border-radius: 8px 0 0 8px;
+    transition:    background-color @anim;
+}
+
+// ── Card body ──────────────────────────────────────────────────────────────────
+.kpi-card-body {
+    flex:        1 1 auto;
+    display:     flex;
+    flex-direction: column;
+    padding:     12px 14px 8px 12px;
+    min-width:   0;
+    overflow:    hidden;
+}
+
+// ── Header row: label + trend ──────────────────────────────────────────────────
+.kpi-header-row {
+    display:         flex;
+    align-items:     center;
+    justify-content: space-between;
+    gap:             6px;
+    flex-shrink:     0;
+    min-height:      18px;
+}
+
+.kpi-label {
+    font-size:     11px;
+    font-weight:   600;
+    color:         @muted;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space:   nowrap;
+    overflow:      hidden;
+    text-overflow: ellipsis;
+    flex:          1 1 auto;
+    min-width:     0;
+}
+
+// ── Trend indicator ────────────────────────────────────────────────────────────
+.kpi-trend-badge {
+    display:       flex;
+    align-items:   center;
+    gap:           3px;
+    padding:       2px 7px;
+    border-radius: 12px;
+    font-size:     11px;
+    font-weight:   700;
+    white-space:   nowrap;
+    flex-shrink:   0;
+    transition:    all @anim;
+
+    &.positive {
+        color:      @green;
+        background: fade(@green, 12%);
+    }
+
+    &.negative {
+        color:      @red;
+        background: fade(@red, 12%);
+    }
+
+    .trend-arrow {
+        display:       inline-block;
+        transform-origin: center;
+    }
+
+    &.bounce .trend-arrow {
+        animation: arrow-bounce 500ms ease-out;
+    }
+}
+
+@keyframes arrow-bounce {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-4px); }
+    60%  { transform: translateY(2px); }
+    100% { transform: translateY(0); }
+}
+
+// ── Main value area ────────────────────────────────────────────────────────────
+.kpi-value-area {
+    flex:            1 1 auto;
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    padding:         4px 0 2px;
+    min-height:      0;
+}
+
+.kpi-value {
+    font-weight:   700;
+    line-height:   1.1;
+    white-space:   nowrap;
+    overflow:      hidden;
+    text-overflow: ellipsis;
+    transition:    color @anim;
+}
+
+// ── Target bar ─────────────────────────────────────────────────────────────────
+.kpi-target-section {
+    flex-shrink: 0;
+    padding:     0 0 4px;
+}
+
+.kpi-target-label-row {
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
+    font-size:       10px;
+    color:           @muted;
+    margin-bottom:   3px;
+    gap:             6px;
+}
+
+.kpi-target-label-text {
+    white-space: nowrap;
+    overflow:    hidden;
+    text-overflow: ellipsis;
+}
+
+.kpi-target-pct {
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.kpi-target-bar-track {
+    width:         100%;
+    height:        4px;
+    background:    @border;
+    border-radius: 2px;
+    overflow:      hidden;
+}
+
+.kpi-target-bar-fill {
+    height:        100%;
+    border-radius: 2px;
+    transition:    width 600ms ease-out, background-color @anim;
+    max-width:     100%;
+}
+
+// ── Sparkline area ─────────────────────────────────────────────────────────────
+.kpi-sparkline-area {
+    flex-shrink: 0;
+    width:       100%;
+    position:    relative;
+
+    svg {
+        display: block;
+        overflow: visible;
+    }
+}
+
+.sparkline-area-path {
+    opacity: 0.18;
+}
+
+.sparkline-line-path {
+    fill:             none;
+    stroke-width:     1.8;
+    stroke-linecap:   round;
+    stroke-linejoin:  round;
+}
+
+.sparkline-dot {
+    transition: r 200ms ease-out;
+}
+
+.sparkline-bar-rect {
+    opacity: 0.85;
+}
+
+// ── Tooltip (sparkline hover) ──────────────────────────────────────────────────
+.kpi-spark-tooltip {
+    position:       absolute;
+    z-index:        200;
+    background:     @bg;
+    border:         1px solid @border;
+    border-radius:  6px;
+    box-shadow:     0 2px 8px rgba(0, 0, 0, 0.12);
+    padding:        5px 9px;
+    pointer-events: none;
+    font-size:      11px;
+    color:          @text;
+    white-space:    nowrap;
+    opacity:        0;
+    transition:     opacity 120ms ease-out;
+
+    &.visible { opacity: 1; }
+
+    .spark-tt-date  { color: @muted; font-size: 10px; }
+    .spark-tt-value { font-weight: 700; margin-top: 1px; }
+}
+
+// ── Empty state ────────────────────────────────────────────────────────────────
+.kpi-empty {
+    display:         flex;
+    flex-direction:  column;
+    align-items:     center;
+    justify-content: center;
+    width:           100%;
+    height:          100%;
+    gap:             8px;
+    text-align:      center;
+    padding:         20px;
+    font-family:     @font;
+
+    .empty-title {
+        font-size:   15px;
+        font-weight: 600;
+        color:       @text;
+        margin:      0;
+    }
+
+    .empty-body {
+        font-size:   12px;
+        color:       @muted;
+        margin:      0;
+        max-width:   200px;
+        line-height: 1.5;
+    }
+}
+
+// ── Briqlab Trial Overlay CSS
+// Do not edit manually — regenerated by fix-overlay-css.js
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Hidden utility
+.hidden { display: none !important; }
+
+// Trial badge (bottom-left — shows "Trial: N days remaining")
+.briqlab-trial-badge {
+    position:      absolute;
+    bottom:        8px;
+    left:          8px;
+    z-index:       50;
+    padding:       3px 8px;
+    background:    rgba(16, 185, 129, 0.12);
+    border:        1px solid rgba(16, 185, 129, 0.30);
+    border-radius: 12px;
+    font-family:   'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size:     9px;
+    color:         #10B981;
+    font-weight:   500;
+    pointer-events: none;
+    white-space:   nowrap;
+    &.hidden { display: none !important; }
+}
+
+// Pro badge (bottom-right — shows "✓ Pro Active")
+.briqlab-pro-badge {
+    position:      absolute;
+    bottom:        8px;
+    right:         8px;
+    z-index:       50;
+    padding:       3px 8px;
+    background:    rgba(16, 185, 129, 0.12);
+    border:        1px solid rgba(16, 185, 129, 0.30);
+    border-radius: 12px;
+    font-family:   'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size:     9px;
+    color:         #10B981;
+    font-weight:   500;
+    pointer-events: none;
+    white-space:   nowrap;
+    &.hidden { display: none !important; }
+}
+
+// Invalid-key error (bottom-right — shows "✗ Invalid key")
+.briqlab-key-error {
+    position:      absolute;
+    bottom:        30px;
+    right:         8px;
+    z-index:       50;
+    font-family:   'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size:     9px;
+    color:         #EF4444;
+    pointer-events: none;
+    &.hidden { display: none !important; }
+}
+
+// Trial overlay (full-cover backdrop — hidden until trial expires)
+.briqlab-trial-overlay {
+    position:        absolute;
+    inset:           0;
+    z-index:         100;
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    background:      rgba(255, 255, 255, 0.15);
+    padding:         16px;
+    &.hidden { display: none !important; }
+}
+
+// Trial card (white branded card centred in the overlay)
+.briqlab-trial-card {
+    background:    #FFFFFF;
+    border:        1px solid #E2E8F0;
+    border-radius: 8px;
+    box-shadow:    0 8px 32px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.10);
+    padding:       24px 28px;
+    max-width:     320px;
+    width:         100%;
+    text-align:    center;
+    font-family:   'Segoe UI', system-ui, -apple-system, sans-serif;
+    box-sizing:    border-box;
+
+    .trial-icon {
+        width:   40px;
+        height:  40px;
+        margin:  0 auto 12px;
+        opacity: 0.5;
+        display: block;
+    }
+
+    .trial-title {
+        font-size:   18px;
+        font-weight: 700;
+        color:       #111827;
+        margin:      0 0 8px;
+    }
+
+    .trial-body {
+        font-size:   13px;
+        color:       #6B7280;
+        margin:      0 0 16px;
+        line-height: 1.55;
+    }
+
+    .trial-btn {
+        display:         block;
+        width:           100%;
+        padding:         10px 20px;
+        background:      #F97316;
+        color:           #fff;
+        border:          none;
+        border-radius:   8px;
+        font-family:     'Segoe UI', system-ui, -apple-system, sans-serif;
+        font-size:       14px;
+        font-weight:     600;
+        cursor:          pointer;
+        transition:      background 300ms ease-out, transform 150ms;
+        text-decoration: none;
+        line-height:     1.4;
+        box-sizing:      border-box;
+
+        &:hover {
+            background: #e8650a;
+            transform:  translateY(-1px);
+        }
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    .trial-subtext {
+        font-size:   11px;
+        color:       #6B7280;
+        margin:      12px 0 0;
+        line-height: 1.5;
+    }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "briqlab-drill-down-bubble-chart",
+  "description": "Bubble chart with packed layout, drill-down and 3-dimensional data analysis. By Briqlab",
+  "version": "1.0.0",
+  "homepage": "https://briqlab.io",
+  "author": {
+    "name": "Briqlab",
+    "email": "abhijit@briqlab.io",
+    "url": "https://briqlab.io"
+  },
+  "keywords": [
+    "powerbi",
+    "custom-visual",
+    "drill-down",
+    "bubble-chart",
+    "scatter-chart",
+    "packed-bubbles",
+    "hierarchy",
+    "briqlab",
+    "data-visualization"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/briqlab/powerbi-visuals"
+  },
+  "license": "MIT",
+  "scripts": {
+    "pbiviz": "pbiviz",
+    "start": "pbiviz start",
+    "package": "pbiviz package",
+    "lint": "npx eslint ."
+  },
+  "dependencies": {
+    "d3": "7.9.0",
+    "powerbi-visuals-utils-formattingmodel": "6.0.4"
+  },
+  "devDependencies": {
+    "@types/d3": "7.4.3",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "eslint": "^9.11.1",
+    "eslint-plugin-powerbi-visuals": "^1.0.0",
+    "powerbi-visuals-api": "~5.3.0",
+    "typescript": "5.5.4"
+  }
+}

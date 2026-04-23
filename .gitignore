@@ -1,0 +1,7 @@
+node_modules/
+.tmp/
+dist/
+.DS_Store
+*.pbiviz
+webpack.statistics.prod.html
+.claude/

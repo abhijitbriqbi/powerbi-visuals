@@ -1,0 +1,166 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Word",
+            "name": "word",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Weight",
+            "name": "weight",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Sentiment",
+            "name": "sentiment",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "wordSettings": {
+            "properties": {
+                "minFontSize": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "maxFontSize": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "maxWords": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "rotations": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "wordPadding": {
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "fontFamily": {
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        },
+        "colorSettings": {
+            "properties": {
+                "colorMode": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "uniformColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "positiveColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "negativeColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "neutralColor": {
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "exclusionSettings": {
+            "properties": {
+                "stopWords": {
+                    "type": {
+                        "text": true
+                    }
+                },
+                "caseSensitive": {
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "word": {
+                        "max": 1
+                    },
+                    "weight": {
+                        "max": 1
+                    },
+                    "sentiment": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "word"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {
+                            "count": 200
+                        }
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "weight"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "sentiment"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        }
+    },
+    "supportsLandingPage": true,
+    "supportsEmptyDataView": true,
+    "privileges": []
+}
