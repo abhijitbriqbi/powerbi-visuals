@@ -1,0 +1,659 @@
+================================================================================
+BRIQLAB POWER BI VISUALS — PARTNER CENTER SUBMISSION GUIDE
+For Internal Use | Briqbi Analytics Private Limited
+================================================================================
+
+GITHUB REPO   : https://github.com/abhijitbriqbi/powerbi-visuals
+PBIVIZ FILES  : C:\Users\Abhijit\BriqlabVisuals\[visual-folder]\dist\
+CERT NOTES    : C:\Users\Abhijit\BriqlabVisuals\CERTIFICATION_NOTES.txt
+
+================================================================================
+SECTION 1 — PARTNER CENTER LOGIN
+================================================================================
+
+URL       : https://partner.microsoft.com
+Account   : Use briqlab.io Microsoft account
+Publisher : Briqlab
+Company   : Briqbi Analytics Private Limited
+
+================================================================================
+SECTION 2 — COMMON DETAILS (SAME FOR ALL 22 VISUALS)
+================================================================================
+
+OFFER SETUP PAGE
+  Licensing option     : Managing license and selling with Microsoft
+  CRM system           : No CRM system connected
+  Power BI cert        : Leave UNCHECKED (do not request certification yet)
+
+PROPERTIES PAGE
+  Legal & support info : Use Standard Contract (checkbox checked)
+  Privacy policy URL   : https://www.briqlab.io/privacy-policy
+  Support URL          : https://www.briqlab.io/support
+
+AVAILABILITY PAGE
+  Markets              : All 242 markets (default, no changes needed)
+
+PLAN SETUP (IAP)
+  Plan ID              : BriqlabPro   <- MUST be exact, case-sensitive
+  Plan name            : Briqlab Pro
+  Plan description     : Full access to all Briqlab Pro features
+  Trial                : 4 days (already built into visual code)
+
+NOTES FOR CERTIFICATION (MANDATORY)
+  Copy from CERTIFICATION_NOTES.txt — find the [X/22] block for the visual
+  Paste into the Notes for certification field on Review and publish page
+  Submission will be REJECTED without these notes
+
+================================================================================
+SECTION 3 — ALL 22 VISUALS — INDIVIDUAL DETAILS
+================================================================================
+
+--------------------------------------------------------------------------------
+[1/22] BRIQLAB ANIMATED COUNTER
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabAnimations-MS
+Display Name     : Briqlab Animated Counter
+Short Desc       : Animated number counter visual for Power BI with smooth
+                   count-up effects and full formatting control.
+Long Desc        : Briqlab Animated Counter brings your KPIs to life with
+                   smooth count-up animations. Display sales figures, revenue,
+                   headcount, or any numeric metric with eye-catching animated
+                   transitions. Customize speed, easing, prefix/suffix, font,
+                   color, and background to match your report theme perfectly.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : animated counter, KPI, counter
+Category 1       : KPI
+Category 2       : Narratives
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabAnimations3A7B2C1D4E5F6A7B8C9D0E1F2A3B4C5D.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabAnimations-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabAnimations-MS
+
+--------------------------------------------------------------------------------
+[2/22] BRIQLAB BAR CHART
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabBarChart-MS
+Display Name     : Briqlab Bar Chart
+Short Desc       : Fully customizable bar chart for Power BI with advanced
+                   formatting, data labels, and drill-through support.
+Long Desc        : Briqlab Bar Chart is a professional-grade bar chart visual
+                   for Power BI with extensive formatting options. Features
+                   include custom colors per bar, data labels, reference lines,
+                   conditional formatting, tooltips, and drill-through. Perfect
+                   for sales comparisons, category analysis, and performance
+                   dashboards. Requires Briqlab Pro subscription after 4-day
+                   free trial.
+Keywords         : bar chart, comparison, category
+Category 1       : Comparison
+Category 2       : Distribution
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabBarChart306A42BC894B467FA1E94A0C4D791CE3.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabBarChart-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabBarChart-MS
+
+--------------------------------------------------------------------------------
+[3/22] BRIQLAB BULLET CHART PRO
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabBulletPro-MS
+Display Name     : Briqlab Bullet Chart Pro
+Short Desc       : Professional bullet chart for Power BI to track performance
+                   against targets with qualitative range bands.
+Long Desc        : Briqlab Bullet Chart Pro is a feature-rich implementation
+                   of Stephen Few's bullet chart for Power BI. Compare actual
+                   values against targets with qualitative performance bands
+                   (poor, satisfactory, good). Ideal for KPI dashboards,
+                   scorecards, and executive reporting. Supports horizontal and
+                   vertical orientations with full formatting control.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : bullet chart, KPI, target
+Category 1       : KPI
+Category 2       : Comparison
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabBulletPro0B44EA7B9435423B9DD70A678639F531.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabBulletPro-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabBulletPro-MS
+
+--------------------------------------------------------------------------------
+[4/22] BRIQLAB CALENDAR HEATMAP
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabCalendarHeat-MS
+Display Name     : Briqlab Calendar Heatmap
+Short Desc       : Visualize daily data trends over time with a color-coded
+                   calendar heatmap for Power BI.
+Long Desc        : Briqlab Calendar Heatmap displays your time-series data in
+                   a familiar calendar grid with color intensity representing
+                   values. Instantly spot patterns, seasonality, and outliers
+                   across days, weeks, and months. Perfect for sales tracking,
+                   website traffic, attendance, and operational reporting.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : calendar heatmap, time series, daily trends
+Category 1       : Change over time
+Category 2       : Distribution
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabCalendarHeatB9067E6D2CE34E589962DA5C864BA4C2.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabCalendarHeat-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabCalendarHeat-MS
+
+--------------------------------------------------------------------------------
+[5/22] BRIQLAB DONUT CHART
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabDonutChart-MS
+Display Name     : Briqlab Donut Chart
+Short Desc       : Beautiful, highly customizable donut chart for Power BI
+                   with inner labels, legends, and rich formatting options.
+Long Desc        : Briqlab Donut Chart transforms your part-to-whole data into
+                   stunning donut visualizations. Features include custom slice
+                   colors, inner text with dynamic labels, percentage display,
+                   interactive legend, tooltips, and full font/color control.
+                   Great for market share, budget allocation, and composition
+                   analysis. Requires Briqlab Pro subscription after 4-day
+                   free trial.
+Keywords         : donut chart, pie chart, part-to-whole
+Category 1       : Part-to-Whole
+Category 2       : Distribution
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabDonutChart29224AD845F2466EA4EE19CCBA3C8980.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabDonutChart-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabDonutChart-MS
+
+--------------------------------------------------------------------------------
+[6/22] BRIQLAB DOT MATRIX
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabDotMatrix-MS
+Display Name     : Briqlab Dot Matrix
+Short Desc       : Engaging dot matrix visual for Power BI to display
+                   proportions and quantities using individual dot units.
+Long Desc        : Briqlab Dot Matrix represents data as a grid of dots where
+                   each dot equals a unit of value. Perfect for visualizing
+                   proportions, survey results, population data, and percentage
+                   breakdowns in an intuitive and engaging way. Supports custom
+                   colors, dot sizes, shapes, and grouping.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : dot matrix, proportions, waffle chart
+Category 1       : Distribution
+Category 2       : Part-to-Whole
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabDotMatrix27F6644042234CFA9379AA5C5EF1C1C5.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabDotMatrix-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabDotMatrix-MS
+
+--------------------------------------------------------------------------------
+[7/22] BRIQLAB DRILL DOWN BUBBLE
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabDrillBubble-MS
+Display Name     : Briqlab Drill Down Bubble
+Short Desc       : Interactive drill-down bubble chart for Power BI to explore
+                   multi-dimensional data across hierarchy levels.
+Long Desc        : Briqlab Drill Down Bubble chart lets users explore data
+                   hierarchies interactively. Click any bubble to drill into
+                   the next level of your data hierarchy. Bubble size, color,
+                   and position encode multiple dimensions simultaneously.
+                   Perfect for market analysis, product performance, and
+                   geographic data exploration.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : bubble chart, drill down, scatter
+Category 1       : Distribution
+Category 2       : Comparison
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabDrillBubble4F8E2D1A7C3B9E6F0D5A2E4C8B3F7A1D.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabDrillBubble-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabDrillBubble-MS
+
+--------------------------------------------------------------------------------
+[8/22] BRIQLAB DRILL DOWN PIE
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabDrillPie-MS
+Display Name     : Briqlab Drill Down Pie
+Short Desc       : Interactive drill-down pie chart for Power BI with
+                   hierarchical data exploration and rich formatting.
+Long Desc        : Briqlab Drill Down Pie allows users to drill through data
+                   hierarchies directly within the pie chart. Click any slice
+                   to explore the next level of detail. Features include custom
+                   colors, data labels, percentage display, legend, and
+                   animated transitions. Ideal for sales breakdown, category
+                   composition, and budget analysis.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : pie chart, drill down, hierarchy
+Category 1       : Part-to-Whole
+Category 2       : Distribution
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabDrillPie61C8FD718CFD44178A3121429F473563.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabDrillPie-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabDrillPie-MS
+
+--------------------------------------------------------------------------------
+[9/22] BRIQLAB FLOW SANKEY
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabFlowSankey-MS
+Display Name     : Briqlab Flow Sankey
+Short Desc       : Visualize flows and relationships between categories with
+                   a Sankey diagram for Power BI.
+Long Desc        : Briqlab Flow Sankey visualizes the flow of quantities
+                   between nodes using proportional-width links. Perfect for
+                   showing customer journeys, budget flows, energy transfers,
+                   supply chains, and conversion funnels. Supports custom node
+                   colors, link colors, labels, and tooltips.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : sankey chart, flow, relationships
+Category 1       : Flow
+Category 2       : Distribution
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabFlowSankeyA451A47C31D642F48BE889E1B061C82B.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabFlowSankey-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabFlowSankey-MS
+
+--------------------------------------------------------------------------------
+[10/22] BRIQLAB GAUGE
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabGauge-MS
+Display Name     : Briqlab Gauge
+Short Desc       : Elegant gauge chart for Power BI to display KPI progress
+                   against targets with customizable dial and color bands.
+Long Desc        : Briqlab Gauge displays a single metric as a speedometer-
+                   style dial. Show progress towards a target with color-coded
+                   bands (green/yellow/red), needle indicator, and value
+                   labels. Fully customizable angles, colors, min/max values,
+                   and typography. Perfect for KPI dashboards and scorecards.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : gauge, KPI, speedometer
+Category 1       : KPI
+Category 2       : Comparison
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabGauge987E35659DC14F58A6C5699632F5E2E8.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabGauge-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabGauge-MS
+
+--------------------------------------------------------------------------------
+[11/22] BRIQLAB KPI CARD
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabKPICard-MS
+Display Name     : Briqlab KPI Card
+Short Desc       : Beautifully designed KPI card visual for Power BI with
+                   trend indicators, comparison values, and rich formatting.
+Long Desc        : Briqlab KPI Card displays your most important metrics in a
+                   clean, professional card layout. Show the primary value with
+                   comparison to previous period, trend arrow, percentage
+                   change, and custom icons. Fully customizable fonts, colors,
+                   backgrounds, and border styles. Perfect for executive
+                   dashboards and summary pages.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : KPI card, metric, scorecard
+Category 1       : KPI
+Category 2       : Narratives
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabKPICardE6F0D1803428444287389033ABD0B98C.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabKPICard-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabKPICard-MS
+
+--------------------------------------------------------------------------------
+[12/22] BRIQLAB KPI SPARKLINE
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabKPISparkline-MS
+Display Name     : Briqlab KPI Sparkline
+Short Desc       : Compact KPI card with embedded sparkline trend chart for
+                   Power BI — show value and trend in a single visual.
+Long Desc        : Briqlab KPI Sparkline combines a KPI metric display with
+                   an embedded sparkline chart to show both the current value
+                   and its trend over time in one compact visual. Supports
+                   area, line, and bar sparklines with custom colors, reference
+                   lines, and comparison values. Ideal for dense dashboards
+                   with multiple metrics.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : KPI sparkline, trend, mini chart
+Category 1       : KPI
+Category 2       : Change over time
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabKPISparklineB2D4F6A8C0E2A4C6E8B0D2F4A6C8E0B2.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabKPISparkline-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabKPISparkline-MS
+
+--------------------------------------------------------------------------------
+[13/22] BRIQLAB MEKKO CHART
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabMekkoChart-MS
+Display Name     : Briqlab Mekko Chart
+Short Desc       : Mekko (Marimekko) chart for Power BI to visualize two
+                   dimensions simultaneously with variable-width columns.
+Long Desc        : Briqlab Mekko Chart (also known as Marimekko chart)
+                   visualizes two dimensions at once — column width represents
+                   one measure while column height segments show another.
+                   Perfect for market share analysis, product mix, customer
+                   segmentation, and competitive analysis. Supports custom
+                   colors, data labels, and tooltips.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : mekko chart, marimekko, market share
+Category 1       : Comparison
+Category 2       : Distribution
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabMekkoChart95B2CDD747234362A50E87984DE448E1.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabMekkoChart-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabMekkoChart-MS
+
+--------------------------------------------------------------------------------
+[14/22] BRIQLAB PIE CHART
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabPieChart-MS
+Display Name     : Briqlab Pie Chart
+Short Desc       : Feature-rich pie chart for Power BI with exploded slices,
+                   custom colors, data labels, and legend formatting.
+Long Desc        : Briqlab Pie Chart is a fully customizable pie chart visual
+                   with advanced formatting options beyond the standard Power
+                   BI pie chart. Features include exploded slices, custom per-
+                   slice colors, flexible data labels (value/percentage/both),
+                   interactive legend, and smooth animations. Great for
+                   composition and part-to-whole analysis.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : pie chart, composition, part-to-whole
+Category 1       : Part-to-Whole
+Category 2       : Distribution
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabPieChart2A910BE214CB47D18CF22F8067D5BBEC.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabPieChart-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabPieChart-MS
+
+--------------------------------------------------------------------------------
+[15/22] BRIQLAB PROGRESS RING
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabProgressRing-MS
+Display Name     : Briqlab Progress Ring
+Short Desc       : Circular progress ring visual for Power BI to display
+                   completion percentage with animated fill and custom styling.
+Long Desc        : Briqlab Progress Ring displays progress towards a goal as
+                   an animated circular ring. Show percentage completion,
+                   actual vs target values, and custom labels inside the ring.
+                   Fully customizable ring thickness, colors, animation speed,
+                   fonts, and background. Perfect for project dashboards,
+                   sales targets, and completion metrics.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : progress ring, donut, completion
+Category 1       : KPI
+Category 2       : Part-to-Whole
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabProgressRing9C357BB9746F4C2B9762B144C2A263E1.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabProgressRing-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabProgressRing-MS
+
+--------------------------------------------------------------------------------
+[16/22] BRIQLAB PULSE KPI
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabPulseKPI-MS
+Display Name     : Briqlab Pulse KPI
+Short Desc       : Animated pulsing KPI visual for Power BI that highlights
+                   live metric changes with attention-grabbing pulse effects.
+Long Desc        : Briqlab Pulse KPI grabs attention with animated pulse
+                   effects around your most critical KPI metrics. Use it to
+                   highlight real-time or near-real-time data changes in live
+                   dashboards and operations centers. Supports custom pulse
+                   colors, speeds, value formatting, trend indicators, and
+                   conditional coloring based on thresholds.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : pulse KPI, animated KPI, live dashboard
+Category 1       : KPI
+Category 2       : Change over time
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabPulseKPI22C21A5D5DE44BC590930F33157B85EF.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabPulseKPI-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabPulseKPI-MS
+
+--------------------------------------------------------------------------------
+[17/22] BRIQLAB RADAR CHART PRO
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabRadarPro-MS
+Display Name     : Briqlab Radar Chart Pro
+Short Desc       : Professional radar/spider chart for Power BI to compare
+                   multiple attributes across categories or entities.
+Long Desc        : Briqlab Radar Chart Pro (spider chart) visualizes
+                   multivariate data across multiple axes radiating from a
+                   center point. Compare performance across multiple dimensions
+                   simultaneously — ideal for skill assessments, product
+                   comparisons, competitive analysis, and balanced scorecard
+                   reporting. Supports multiple series, custom colors, and
+                   filled areas. Requires Briqlab Pro after 4-day free trial.
+Keywords         : radar chart, spider chart, comparison
+Category 1       : Comparison
+Category 2       : Distribution
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabRadarPro00AB02FA7F1A4AD68777E9B408C0B9D3.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabRadarPro-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabRadarPro-MS
+
+--------------------------------------------------------------------------------
+[18/22] BRIQLAB TEXT SCROLLER
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabScroller-MS
+Display Name     : Briqlab Text Scroller
+Short Desc       : Animated scrolling news-ticker visual for Power BI to
+                   display dynamic messages, alerts, and announcements.
+Long Desc        : Briqlab Text Scroller creates a smooth animated marquee
+                   ticker to display scrolling text from your data. Perfect for
+                   live dashboards showing news feeds, alerts, announcements,
+                   KPI summaries, and rotating messages. Customize scroll
+                   speed, direction, font, color, size, background, and
+                   separator characters.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : text scroller, ticker, marquee
+Category 1       : KPI
+Category 2       : Narratives
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabScroller5CF8B81920EB435494A08E79D75B53E7.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabScroller-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabScroller-MS
+
+--------------------------------------------------------------------------------
+[19/22] BRIQLAB SEARCH & FILTER
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabSearch-MS
+Display Name     : Briqlab Search & Filter
+Short Desc       : Advanced search and filter visual for Power BI with
+                   real-time text search across your report data.
+Long Desc        : Briqlab Search & Filter adds a powerful search box to your
+                   Power BI reports that filters all connected visuals in real
+                   time as users type. Supports partial match, case-insensitive
+                   search, multiple field search, and custom placeholder text.
+                   Perfect for large datasets where users need to quickly find
+                   specific records, customers, or products.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : search filter, text search, slicer
+Category 1       : Filters
+Category 2       : Other
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabSearch3A7F2B1C8D4E9F6A0B5C3D7E2F4A8B1C.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabSearch-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabSearch-MS
+
+--------------------------------------------------------------------------------
+[20/22] BRIQLAB SLOPE CHART
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabSlopeChart-MS
+Display Name     : Briqlab Slope Chart
+Short Desc       : Slope chart for Power BI to show change between two time
+                   periods with clear directional lines per category.
+Long Desc        : Briqlab Slope Chart visualizes how values change between
+                   exactly two points in time — before and after. Each line
+                   connects the two values for a category, making it instantly
+                   clear which items increased, decreased, or stayed flat.
+                   Perfect for comparing performance across periods, regions,
+                   or product lines. Supports custom colors, labels, and
+                   highlight rules. Requires Briqlab Pro after 4-day trial.
+Keywords         : slope chart, change over time, comparison
+Category 1       : Change over time
+Category 2       : Comparison
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabSlopeChart5FB1FF5723A84889BF1A3770693D0356.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabSlopeChart-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabSlopeChart-MS
+
+--------------------------------------------------------------------------------
+[21/22] BRIQLAB VIOLIN PLOT
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabViolinPlot-MS
+Display Name     : Briqlab Violin Plot
+Short Desc       : Statistical violin plot for Power BI to visualize data
+                   distribution, density, and spread across categories.
+Long Desc        : Briqlab Violin Plot combines a box plot with a kernel
+                   density estimation to show the full distribution of your
+                   data. See median, quartiles, range, and the probability
+                   density of values simultaneously. Perfect for statistical
+                   analysis, quality control, survey results, and scientific
+                   reporting. Requires Briqlab Pro after 4-day free trial.
+Keywords         : violin plot, distribution, statistics
+Category 1       : Distribution
+Category 2       : Comparison
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabViolinPlot9038B5824A7B4804BB556E9E9899D4DB.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabViolinPlot-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabViolinPlot-MS
+
+--------------------------------------------------------------------------------
+[22/22] BRIQLAB WORD CLOUD
+--------------------------------------------------------------------------------
+Offer Alias      : briqlabWordCloud-MS
+Display Name     : Briqlab Word Cloud
+Short Desc       : Dynamic word cloud visual for Power BI to display text
+                   frequency data with customizable fonts, colors, and layout.
+Long Desc        : Briqlab Word Cloud generates beautiful word cloud
+                   visualizations from your text data where word size
+                   represents frequency or measure value. Perfect for feedback
+                   analysis, social media monitoring, survey results, product
+                   reviews, and any text-based dataset. Supports custom color
+                   palettes, font families, rotation angles, and word limits.
+                   Requires Briqlab Pro subscription after 4-day free trial.
+Keywords         : word cloud, text analysis, frequency
+Category 1       : Distribution
+Category 2       : Infographics
+Industry 1       : Financial Services
+Industry 2       : Distribution
+PBIVIZ File      : briqlabWordCloud2AE4A77FBD7044FB88FC7936EDE34BCD.1.0.0.0.pbiviz
+PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabWordCloud-MS\dist\
+GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabWordCloud-MS
+
+================================================================================
+SECTION 4 — ASSETS NEEDED PER VISUAL (TO BE CREATED)
+================================================================================
+
+For each of the 22 visuals, the following assets must be created:
+
+1. ICON (300x300 PNG)
+   - Unique icon per visual
+   - Clean, simple design on white or transparent background
+   - Save as: [visual-name]-icon-300x300.png
+
+2. SCREENSHOTS (5 per visual at exactly 1280x720px)
+   - Screenshot 1: Visual with sample data loaded (overview)
+   - Screenshot 2: Format panel showing customization options
+   - Screenshot 3: Feature highlight (drill-down, animation, etc.)
+   - Screenshot 4: Dark theme or alternative color scheme
+   - Screenshot 5: Visual used in a full dashboard context
+   - Use Power BI Desktop, connect sample data, take screenshots at 1280x720
+
+3. SAMPLE .PBIX FILE (1 per visual)
+   - Open Power BI Desktop
+   - Import the visual from the dist folder
+   - Connect sample/dummy data relevant to the visual type
+   - Save as [visual-name]-sample.pbix
+   - Upload in Technical Configuration on Partner Center
+
+================================================================================
+SECTION 5 — STEP BY STEP SUBMISSION PROCESS (DO THIS FOR EACH VISUAL)
+================================================================================
+
+STEP 1 : Go to https://partner.microsoft.com
+STEP 2 : Marketplace offers > New offer > Power BI visual
+
+STEP 3 : OFFER SETUP PAGE
+          - Offer alias: copy from Section 3
+          - Select: "Managing license and selling with Microsoft"
+          - Power BI certification: LEAVE UNCHECKED
+          - CRM: Leave as no CRM connected
+          - Save
+
+STEP 4 : PROPERTIES PAGE
+          - Tick Category 1 and Category 2 from Section 3
+          - Tick Industry 1 and Industry 2 from Section 3
+          - Tick Standard Contract checkbox
+          - Privacy policy: https://www.briqlab.io/privacy-policy
+          - Support: https://www.briqlab.io/support
+          - Save draft
+
+STEP 5 : OFFER LISTING PAGE
+          - Language: English
+          - Name: Display Name from Section 3
+          - Search keywords: Keywords from Section 3
+          - Short description: Short Desc from Section 3
+          - Long description: Long Desc from Section 3
+          - Upload icon (300x300 PNG)
+          - Upload 5 screenshots (1280x720 PNG each)
+          - Save draft
+
+STEP 6 : AVAILABILITY PAGE
+          - Leave as 242 of 242 markets
+          - Save draft
+
+STEP 7 : PLAN OVERVIEW PAGE
+          - Create new plan
+          - Plan ID: BriqlabPro  <- exact, case-sensitive
+          - Plan name: Briqlab Pro
+          - Set pricing (monthly/annual)
+          - Save
+
+STEP 8 : TECHNICAL CONFIGURATION PAGE
+          - Upload .pbiviz file (path in Section 3 above)
+          - Upload .pbix sample file
+          - If API version warning appears — contact Abhijit immediately
+          - Save draft
+
+STEP 9 : REVIEW AND PUBLISH PAGE
+          - All sections must show green checkmark
+          - Notes for certification: copy from CERTIFICATION_NOTES.txt
+            Find the matching [X/22] block for the visual being submitted
+          - Click Publish
+
+================================================================================
+SECTION 6 — IMPORTANT NOTES
+================================================================================
+
+1. Plan ID "BriqlabPro" is CASE SENSITIVE — must match exactly
+
+2. Certification Notes are MANDATORY — submission auto-rejected without them
+   File: C:\Users\Abhijit\BriqlabVisuals\CERTIFICATION_NOTES.txt
+   Online: https://github.com/abhijitbriqbi/powerbi-visuals/blob/main/CERTIFICATION_NOTES.txt
+
+3. Do NOT tick "Request Power BI certification" — this is done later
+
+4. PBIVIZ files are in the dist/ folder — NOT in .tmp/ folder
+
+5. Descriptions must be unique per visual — do not copy between visuals
+
+6. Screenshots must show real data — blank/empty visuals will be rejected
+
+7. All 22 visuals share Plan ID BriqlabPro — one subscription unlocks all
+
+8. Microsoft review takes 3-5 business days per visual
+
+9. If any submission is rejected, read the rejection reason carefully
+   and contact Abhijit before resubmitting
+
+================================================================================
+END OF DOCUMENT | Briqbi Analytics Private Limited | briqlab.io
+================================================================================
