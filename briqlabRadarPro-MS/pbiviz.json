@@ -5,12 +5,12 @@
     "guid": "briqlabRadarPro00AB02FA7F1A4AD68777E9B408C0B9D3",
     "visualClassName": "Visual",
     "version": "1.0.0.0",
-    "description": "Premium radar / spider chart for Power BI by Briqlab — briqlab.io. Additional purchase may be required for pro features.",
+    "description": "Premium radar / spider chart for Power BI by Briqlab â€” briqlab.io. Additional purchase may be required for pro features.",
     "supportUrl": "https://www.briqlab.io/support",
     "websiteUrl": "https://briqlab.io",
     "gitHubUrl": "https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabRadarPro-MS"
   },
-  "apiVersion": "5.3.0",
+  "apiVersion": "5.10.0",
   "author": {
     "name": "Briqlab",
     "email": "abhijit@briqlab.io"

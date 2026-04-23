@@ -5,12 +5,12 @@
     "guid": "briqlabSlopeChart5FB1FF5723A84889BF1A3770693D0356",
     "visualClassName": "Visual",
     "version": "1.0.0.0",
-    "description": "Premium slope chart for Power BI by Briqlab — briqlab.io. Additional purchase may be required for pro features.",
+    "description": "Premium slope chart for Power BI by Briqlab â€” briqlab.io. Additional purchase may be required for pro features.",
     "supportUrl": "https://www.briqlab.io/support",
     "websiteUrl": "https://briqlab.io",
     "gitHubUrl": "https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabSlopeChart-MS"
   },
-  "apiVersion": "5.3.0",
+  "apiVersion": "5.10.0",
   "author": {
     "name": "Briqlab",
     "email": "abhijit@briqlab.io"

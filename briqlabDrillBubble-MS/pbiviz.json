@@ -5,12 +5,12 @@
     "guid": "briqlabDrillBubble4F8E2D1A7C3B9E6F0D5A2E4C8B3F7A1D",
     "visualClassName": "Visual",
     "version": "1.0.0.0",
-    "description": "Interactive drill-down bubble chart for Power BI by Briqlab — briqlab.io. Additional purchase may be required for pro features.",
+    "description": "Interactive drill-down bubble chart for Power BI by Briqlab â€” briqlab.io. Additional purchase may be required for pro features.",
     "supportUrl": "https://www.briqlab.io/support",
     "websiteUrl": "https://briqlab.io",
     "gitHubUrl": "https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabDrillBubble-MS"
   },
-  "apiVersion": "5.3.0",
+  "apiVersion": "5.10.0",
   "author": {
     "name": "Briqlab",
     "email": "abhijit@briqlab.io"

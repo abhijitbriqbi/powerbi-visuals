@@ -5,12 +5,12 @@
     "guid": "briqlabKPISparklineB2D4F6A8C0E2A4C6E8B0D2F4A6C8E0B2",
     "visualClassName": "Visual",
     "version": "1.0.0.0",
-    "description": "Advanced KPI card with embedded sparkline trend, target progress bar and animated count-up. by Briqlab — briqlab.io. Additional purchase may be required for pro features.",
+    "description": "Advanced KPI card with embedded sparkline trend, target progress bar and animated count-up. by Briqlab â€” briqlab.io. Additional purchase may be required for pro features.",
     "supportUrl": "https://www.briqlab.io/support",
     "websiteUrl": "https://briqlab.io",
     "gitHubUrl": "https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabKPISparkline-MS"
   },
-  "apiVersion": "5.3.0",
+  "apiVersion": "5.10.0",
   "author": {
     "name": "Briqlab",
     "email": "abhijit@briqlab.io"

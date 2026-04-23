@@ -5,12 +5,12 @@
     "guid": "briqlabSearch3A7F2B1C8D4E9F6A0B5C3D7E2F4A8B1C",
     "visualClassName": "Visual",
     "version": "1.0.0.0",
-    "description": "Premium search and cross-filter visual for Power BI by Briqlab — briqlab.io. Additional purchase may be required for pro features.",
+    "description": "Premium search and cross-filter visual for Power BI by Briqlab â€” briqlab.io. Additional purchase may be required for pro features.",
     "supportUrl": "https://www.briqlab.io/support",
     "websiteUrl": "https://briqlab.io",
     "gitHubUrl": "https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabSearch-MS"
   },
-  "apiVersion": "5.3.0",
+  "apiVersion": "5.10.0",
   "author": {
     "name": "Briqlab",
     "email": "abhijit@briqlab.io"

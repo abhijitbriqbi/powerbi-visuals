@@ -5,12 +5,12 @@
     "guid": "briqlabBarChart306A42BC894B467FA1E94A0C4D791CE3",
     "visualClassName": "Visual",
     "version": "1.0.0.0",
-    "description": "Professional interactive Bar Chart for Power BI by Briqlab — briqlab.io. Additional purchase may be required for pro features.",
+    "description": "Professional interactive Bar Chart for Power BI by Briqlab â€” briqlab.io. Additional purchase may be required for pro features.",
     "supportUrl": "https://www.briqlab.io/support",
     "websiteUrl": "https://briqlab.io",
     "gitHubUrl": "https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabBarChart-MS"
   },
-  "apiVersion": "5.3.0",
+  "apiVersion": "5.10.0",
   "author": {
     "name": "Briqlab",
     "email": "abhijit@briqlab.io"

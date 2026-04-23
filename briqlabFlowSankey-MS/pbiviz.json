@@ -5,12 +5,12 @@
     "guid": "briqlabFlowSankeyA451A47C31D642F48BE889E1B061C82B",
     "visualClassName": "Visual",
     "version": "1.0.0.0",
-    "description": "Premium Sankey flow diagram for Power BI by Briqlab — briqlab.io. Additional purchase may be required for pro features.",
+    "description": "Premium Sankey flow diagram for Power BI by Briqlab â€” briqlab.io. Additional purchase may be required for pro features.",
     "supportUrl": "https://www.briqlab.io/support",
     "websiteUrl": "https://briqlab.io",
     "gitHubUrl": "https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabFlowSankey-MS"
   },
-  "apiVersion": "5.3.0",
+  "apiVersion": "5.10.0",
   "author": {
     "name": "Briqlab",
     "email": "abhijit@briqlab.io"
