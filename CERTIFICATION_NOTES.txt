@@ -1,0 +1,1018 @@
+# Briqlab Power BI Visuals — Certification Notes
+# Publisher: Briqlab | Briqbi Analytics Private Limited
+# Use the notes below when submitting each visual on Microsoft Partner Center.
+# Copy the block for the relevant visual into the 'Notes for certification' field.
+
+================================================================================
+
+[1/22] BRIQLAB ANIMATED COUNTER
+================================================================================
+
+VISUAL: Briqlab Animated Counter
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabAnimations3A7B2C1D4E5F6A7B8C9D0E1F2A3B4C5D
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabAnimations-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_animations_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabanimations
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a numeric/measure field to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_animations_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[2/22] BRIQLAB BAR CHART
+================================================================================
+
+VISUAL: Briqlab Bar Chart
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabBarChart306A42BC894B467FA1E94A0C4D791CE3
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabBarChart-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_barchart_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabbarchart
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a category and measure field to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_barchart_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[3/22] BRIQLAB BULLET CHART PRO
+================================================================================
+
+VISUAL: Briqlab Bullet Chart Pro
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabBulletPro0B44EA7B9435423B9DD70A678639F531
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabBulletPro-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_bulletpro_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabbulletpro
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a value and target measure to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_bulletpro_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[4/22] BRIQLAB CALENDAR HEATMAP
+================================================================================
+
+VISUAL: Briqlab Calendar Heatmap
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabCalendarHeatB9067E6D2CE34E589962DA5C864BA4C2
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabCalendarHeat-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_calendarheat_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabcalendarheat
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a date and measure field to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_calendarheat_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[5/22] BRIQLAB DONUT CHART
+================================================================================
+
+VISUAL: Briqlab Donut Chart
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabDonutChart29224AD845F2466EA4EE19CCBA3C8980
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabDonutChart-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_donut_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabdonutchart
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a category and measure field to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_donut_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[6/22] BRIQLAB DOT MATRIX
+================================================================================
+
+VISUAL: Briqlab Dot Matrix
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabDotMatrix27F6644042234CFA9379AA5C5EF1C1C5
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabDotMatrix-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_dotmatrix_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabdotmatrix
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a category and measure field to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_dotmatrix_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[7/22] BRIQLAB DRILL DOWN BUBBLE
+================================================================================
+
+VISUAL: Briqlab Drill Down Bubble
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabDrillBubble4F8E2D1A7C3B9E6F0D5A2E4C8B3F7A1D
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabDrillBubble-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_DrillBubble_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabdrillbubble
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add category, X-axis and Y-axis measure fields to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_DrillBubble_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[8/22] BRIQLAB DRILL DOWN PIE
+================================================================================
+
+VISUAL: Briqlab Drill Down Pie
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabDrillPie61C8FD718CFD44178A3121429F473563
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabDrillPie-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_DrillPie_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabdrillpie
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a category and measure field to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_DrillPie_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[9/22] BRIQLAB FLOW SANKEY
+================================================================================
+
+VISUAL: Briqlab Flow Sankey
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabFlowSankeyA451A47C31D642F48BE889E1B061C82B
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabFlowSankey-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_FlowSankey_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabflowsankey
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add source, destination and weight fields to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_FlowSankey_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[10/22] BRIQLAB GAUGE
+================================================================================
+
+VISUAL: Briqlab Gauge
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabGauge987E35659DC14F58A6C5699632F5E2E8
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabGauge-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_gauge_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabgauge
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a value and target measure to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_gauge_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[11/22] BRIQLAB KPI CARD
+================================================================================
+
+VISUAL: Briqlab KPI Card
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabKPICardE6F0D1803428444287389033ABD0B98C
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabKPICard-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_kpicard_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabkpicard
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a numeric measure field to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_kpicard_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[12/22] BRIQLAB KPI SPARKLINE
+================================================================================
+
+VISUAL: Briqlab KPI Sparkline
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabKPISparklineB2D4F6A8C0E2A4C6E8B0D2F4A6C8E0B2
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabKPISparkline-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_kpisparkline_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabkpisparkline
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a date and measure field to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_kpisparkline_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[13/22] BRIQLAB MEKKO CHART
+================================================================================
+
+VISUAL: Briqlab Mekko Chart
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabMekkoChart95B2CDD747234362A50E87984DE448E1
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabMekkoChart-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_MekkoChart_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabmekkochart
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add category, series and measure fields to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_MekkoChart_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[14/22] BRIQLAB PIE CHART
+================================================================================
+
+VISUAL: Briqlab Pie Chart
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabPieChart2A910BE214CB47D18CF22F8067D5BBEC
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabPieChart-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_piechart_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabpiechart
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a category and measure field to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_piechart_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[15/22] BRIQLAB PROGRESS RING
+================================================================================
+
+VISUAL: Briqlab Progress Ring
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabProgressRing9C357BB9746F4C2B9762B144C2A263E1
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabProgressRing-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_progressring_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabprogressring
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a value and target measure to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_progressring_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[16/22] BRIQLAB PULSE KPI
+================================================================================
+
+VISUAL: Briqlab Pulse KPI
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabPulseKPI22C21A5D5DE44BC590930F33157B85EF
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabPulseKPI-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_PulseKPI_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabpulsekpi
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a date and measure field to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_PulseKPI_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[17/22] BRIQLAB RADAR CHART PRO
+================================================================================
+
+VISUAL: Briqlab Radar Chart Pro
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabRadarPro00AB02FA7F1A4AD68777E9B408C0B9D3
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabRadarPro-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_RadarPro_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabradarpro
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add category and multiple measure fields to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_RadarPro_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[18/22] BRIQLAB TEXT SCROLLER
+================================================================================
+
+VISUAL: Briqlab Text Scroller
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabScroller5CF8B81920EB435494A08E79D75B53E7
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabScroller-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_scroller_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabscroller
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a text or category field to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_scroller_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[19/22] BRIQLAB SEARCH & FILTER
+================================================================================
+
+VISUAL: Briqlab Search & Filter
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabSearch3A7F2B1C8D4E9F6A0B5C3D7E2F4A8B1C
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabSearch-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_search_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabsearch
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a category or text field to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_search_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[20/22] BRIQLAB SLOPE CHART
+================================================================================
+
+VISUAL: Briqlab Slope Chart
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabSlopeChart5FB1FF5723A84889BF1A3770693D0356
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabSlopeChart-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_SlopeChart_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabslopechart
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add category, series and measure fields to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_SlopeChart_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[21/22] BRIQLAB VIOLIN PLOT
+================================================================================
+
+VISUAL: Briqlab Violin Plot
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabViolinPlot9038B5824A7B4804BB556E9E9899D4DB
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabViolinPlot-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_violin_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabviolinplot
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a category and measure field to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_violin_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
+
+[22/22] BRIQLAB WORD CLOUD
+================================================================================
+
+VISUAL: Briqlab Word Cloud
+VERSION: 1.0.0.0
+PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
+GUID: briqlabWordCloud2AE4A77FBD7044FB88FC7936EDE34BCD
+
+--- SOURCE CODE ---
+https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabWordCloud-MS
+
+--- LICENSING ---
+This visual uses Microsoft AppSource IAP via the Power BI host.licenseManager API.
+Plan ID: BriqlabPro (registered in Microsoft Partner Center)
+License cache: 5 minutes (no repeated API calls)
+No fetch(), XMLHttpRequest, or any external API calls are made.
+No third-party license keys are used.
+All license validation is handled entirely by Microsoft's built-in licenseManager service.
+
+--- TRIAL ---
+Trial period: 4 days
+Storage key: briqlab_trial_wordcloud_start (localStorage)
+On trial expiry: overlay shown with 'Buy on AppSource' button
+Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/briqlab.briqlabbriqlabwordcloud
+
+--- HOW TO TEST ---
+1. Install the .pbiviz in Power BI Desktop (File > Import > Power BI visual from file)
+2. Add a text or category field to activate the visual
+3. Trial mode: visual runs fully for 4 days from first load
+4. To reset trial: clear localStorage key "briqlab_trial_wordcloud_start" in browser DevTools
+5. To test licensed mode: assign BriqlabPro plan via Microsoft 365 Admin Center > Billing > Licenses
+6. No external credentials, test accounts, or API keys required
+
+--- CERTIFICATION CHECKLIST ---
++ No fetch(), XMLHttpRequest, or external HTTP calls
++ No WebAccess entry in capabilities.json
++ renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
++ Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
++ Source code on GitHub certification branch
++ Version format: 1.0.0.0 (x.x.x.x)
++ API version: 5.10.0
++ Privacy policy: https://www.briqlab.io/privacy-policy
++ Support: https://www.briqlab.io/support
+
+================================================================================
