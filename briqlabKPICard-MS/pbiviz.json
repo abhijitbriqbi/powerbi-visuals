@@ -4,7 +4,7 @@
     "displayName": "Briqlab KPI Card",
     "guid": "briqlabKPICardE6F0D1803428444287389033ABD0B98C",
     "visualClassName": "Visual",
-    "version": "1.0.0.0",
+    "version": "1.0.0.1",
     "description": "Professional KPI Card visual for Power BI by Briqlab â€” briqlab.io. Additional purchase may be required for pro features.",
     "supportUrl": "https://www.briqlab.io/support",
     "websiteUrl": "https://briqlab.io",
@@ -23,5 +23,5 @@
   "capabilities": "capabilities.json",
   "dependencies": null,
   "stringResources": [],
-  "version": "1.0.0.0"
+  "version": "1.0.0.1"
 }

@@ -4,7 +4,7 @@
     "displayName": "Briqlab KPI Sparkline",
     "guid": "briqlabKPISparklineB2D4F6A8C0E2A4C6E8B0D2F4A6C8E0B2",
     "visualClassName": "Visual",
-    "version": "1.0.0.0",
+    "version": "1.0.0.1",
     "description": "Advanced KPI card with embedded sparkline trend, target progress bar and animated count-up. by Briqlab â€” briqlab.io. Additional purchase may be required for pro features.",
     "supportUrl": "https://www.briqlab.io/support",
     "websiteUrl": "https://briqlab.io",
@@ -23,5 +23,5 @@
   "capabilities": "capabilities.json",
   "dependencies": null,
   "stringResources": [],
-  "version": "1.0.0.0"
+  "version": "1.0.0.1"
 }
