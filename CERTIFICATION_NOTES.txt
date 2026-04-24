@@ -9,7 +9,7 @@
 ================================================================================
 
 VISUAL: Briqlab Animated Counter
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabAnimations3A7B2C1D4E5F6A7B8C9D0E1F2A3B4C5D
 
@@ -44,7 +44,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -55,7 +55,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Bar Chart
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabBarChart306A42BC894B467FA1E94A0C4D791CE3
 
@@ -90,7 +90,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -101,7 +101,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Bullet Chart Pro
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabBulletPro0B44EA7B9435423B9DD70A678639F531
 
@@ -136,7 +136,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -147,7 +147,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Calendar Heatmap
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabCalendarHeatB9067E6D2CE34E589962DA5C864BA4C2
 
@@ -182,7 +182,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -193,7 +193,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Donut Chart
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabDonutChart29224AD845F2466EA4EE19CCBA3C8980
 
@@ -228,7 +228,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -239,7 +239,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Dot Matrix
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabDotMatrix27F6644042234CFA9379AA5C5EF1C1C5
 
@@ -274,7 +274,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -285,7 +285,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Drill Down Bubble
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabDrillBubble4F8E2D1A7C3B9E6F0D5A2E4C8B3F7A1D
 
@@ -320,7 +320,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -331,7 +331,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Drill Down Pie
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabDrillPie61C8FD718CFD44178A3121429F473563
 
@@ -366,7 +366,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -377,7 +377,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Flow Sankey
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabFlowSankeyA451A47C31D642F48BE889E1B061C82B
 
@@ -412,7 +412,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -423,7 +423,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Gauge
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabGauge987E35659DC14F58A6C5699632F5E2E8
 
@@ -458,7 +458,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -469,7 +469,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab KPI Card
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabKPICardE6F0D1803428444287389033ABD0B98C
 
@@ -504,7 +504,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -515,7 +515,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab KPI Sparkline
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabKPISparklineB2D4F6A8C0E2A4C6E8B0D2F4A6C8E0B2
 
@@ -550,7 +550,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -561,7 +561,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Mekko Chart
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabMekkoChart95B2CDD747234362A50E87984DE448E1
 
@@ -596,7 +596,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -607,7 +607,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Pie Chart
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabPieChart2A910BE214CB47D18CF22F8067D5BBEC
 
@@ -642,7 +642,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -653,7 +653,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Progress Ring
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabProgressRing9C357BB9746F4C2B9762B144C2A263E1
 
@@ -688,7 +688,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -699,7 +699,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Pulse KPI
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabPulseKPI22C21A5D5DE44BC590930F33157B85EF
 
@@ -734,7 +734,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -745,7 +745,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Radar Chart Pro
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabRadarPro00AB02FA7F1A4AD68777E9B408C0B9D3
 
@@ -780,7 +780,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -791,7 +791,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Text Scroller
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabScroller5CF8B81920EB435494A08E79D75B53E7
 
@@ -826,7 +826,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -837,7 +837,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Search & Filter
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabSearch3A7F2B1C8D4E9F6A0B5C3D7E2F4A8B1C
 
@@ -872,7 +872,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -883,7 +883,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Slope Chart
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabSlopeChart5FB1FF5723A84889BF1A3770693D0356
 
@@ -918,7 +918,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -929,7 +929,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Violin Plot
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabViolinPlot9038B5824A7B4804BB556E9E9899D4DB
 
@@ -964,7 +964,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support
@@ -975,7 +975,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 ================================================================================
 
 VISUAL: Briqlab Word Cloud
-VERSION: 1.0.0.0
+VERSION: 1.0.0.1
 PUBLISHER: Briqlab (Briqbi Analytics Private Limited)
 GUID: briqlabWordCloud2AE4A77FBD7044FB88FC7936EDE34BCD
 
@@ -1010,7 +1010,7 @@ Purchase URL: https://appsource.microsoft.com/en-us/product/power-bi-visuals/bri
 + renderingEvents API implemented (renderingStarted, renderingFinished, renderingFailed)
 + Microsoft IAP via host.licenseManager only — Plan ID: BriqlabPro
 + Source code on GitHub certification branch
-+ Version format: 1.0.0.0 (x.x.x.x)
++ Version format: 1.0.0.1 (x.x.x.x)
 + API version: 5.10.0
 + Privacy policy: https://www.briqlab.io/privacy-policy
 + Support: https://www.briqlab.io/support

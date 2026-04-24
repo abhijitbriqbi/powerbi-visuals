@@ -66,7 +66,7 @@ Category 1       : KPI
 Category 2       : Narratives
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabAnimations3A7B2C1D4E5F6A7B8C9D0E1F2A3B4C5D.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabAnimations3A7B2C1D4E5F6A7B8C9D0E1F2A3B4C5D.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabAnimations-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabAnimations-MS
 
@@ -89,7 +89,7 @@ Category 1       : Comparison
 Category 2       : Distribution
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabBarChart306A42BC894B467FA1E94A0C4D791CE3.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabBarChart306A42BC894B467FA1E94A0C4D791CE3.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabBarChart-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabBarChart-MS
 
@@ -112,7 +112,7 @@ Category 1       : KPI
 Category 2       : Comparison
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabBulletPro0B44EA7B9435423B9DD70A678639F531.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabBulletPro0B44EA7B9435423B9DD70A678639F531.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabBulletPro-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabBulletPro-MS
 
@@ -134,7 +134,7 @@ Category 1       : Change over time
 Category 2       : Distribution
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabCalendarHeatB9067E6D2CE34E589962DA5C864BA4C2.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabCalendarHeatB9067E6D2CE34E589962DA5C864BA4C2.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabCalendarHeat-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabCalendarHeat-MS
 
@@ -157,7 +157,7 @@ Category 1       : Part-to-Whole
 Category 2       : Distribution
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabDonutChart29224AD845F2466EA4EE19CCBA3C8980.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabDonutChart29224AD845F2466EA4EE19CCBA3C8980.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabDonutChart-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabDonutChart-MS
 
@@ -179,7 +179,7 @@ Category 1       : Distribution
 Category 2       : Part-to-Whole
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabDotMatrix27F6644042234CFA9379AA5C5EF1C1C5.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabDotMatrix27F6644042234CFA9379AA5C5EF1C1C5.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabDotMatrix-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabDotMatrix-MS
 
@@ -202,7 +202,7 @@ Category 1       : Distribution
 Category 2       : Comparison
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabDrillBubble4F8E2D1A7C3B9E6F0D5A2E4C8B3F7A1D.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabDrillBubble4F8E2D1A7C3B9E6F0D5A2E4C8B3F7A1D.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabDrillBubble-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabDrillBubble-MS
 
@@ -225,7 +225,7 @@ Category 1       : Part-to-Whole
 Category 2       : Distribution
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabDrillPie61C8FD718CFD44178A3121429F473563.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabDrillPie61C8FD718CFD44178A3121429F473563.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabDrillPie-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabDrillPie-MS
 
@@ -247,7 +247,7 @@ Category 1       : Flow
 Category 2       : Distribution
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabFlowSankeyA451A47C31D642F48BE889E1B061C82B.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabFlowSankeyA451A47C31D642F48BE889E1B061C82B.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabFlowSankey-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabFlowSankey-MS
 
@@ -269,7 +269,7 @@ Category 1       : KPI
 Category 2       : Comparison
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabGauge987E35659DC14F58A6C5699632F5E2E8.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabGauge987E35659DC14F58A6C5699632F5E2E8.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabGauge-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabGauge-MS
 
@@ -292,7 +292,7 @@ Category 1       : KPI
 Category 2       : Narratives
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabKPICardE6F0D1803428444287389033ABD0B98C.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabKPICardE6F0D1803428444287389033ABD0B98C.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabKPICard-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabKPICard-MS
 
@@ -315,7 +315,7 @@ Category 1       : KPI
 Category 2       : Change over time
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabKPISparklineB2D4F6A8C0E2A4C6E8B0D2F4A6C8E0B2.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabKPISparklineB2D4F6A8C0E2A4C6E8B0D2F4A6C8E0B2.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabKPISparkline-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabKPISparkline-MS
 
@@ -338,7 +338,7 @@ Category 1       : Comparison
 Category 2       : Distribution
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabMekkoChart95B2CDD747234362A50E87984DE448E1.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabMekkoChart95B2CDD747234362A50E87984DE448E1.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabMekkoChart-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabMekkoChart-MS
 
@@ -361,7 +361,7 @@ Category 1       : Part-to-Whole
 Category 2       : Distribution
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabPieChart2A910BE214CB47D18CF22F8067D5BBEC.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabPieChart2A910BE214CB47D18CF22F8067D5BBEC.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabPieChart-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabPieChart-MS
 
@@ -384,7 +384,7 @@ Category 1       : KPI
 Category 2       : Part-to-Whole
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabProgressRing9C357BB9746F4C2B9762B144C2A263E1.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabProgressRing9C357BB9746F4C2B9762B144C2A263E1.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabProgressRing-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabProgressRing-MS
 
@@ -407,7 +407,7 @@ Category 1       : KPI
 Category 2       : Change over time
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabPulseKPI22C21A5D5DE44BC590930F33157B85EF.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabPulseKPI22C21A5D5DE44BC590930F33157B85EF.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabPulseKPI-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabPulseKPI-MS
 
@@ -430,7 +430,7 @@ Category 1       : Comparison
 Category 2       : Distribution
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabRadarPro00AB02FA7F1A4AD68777E9B408C0B9D3.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabRadarPro00AB02FA7F1A4AD68777E9B408C0B9D3.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabRadarPro-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabRadarPro-MS
 
@@ -453,7 +453,7 @@ Category 1       : KPI
 Category 2       : Narratives
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabScroller5CF8B81920EB435494A08E79D75B53E7.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabScroller5CF8B81920EB435494A08E79D75B53E7.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabScroller-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabScroller-MS
 
@@ -476,7 +476,7 @@ Category 1       : Filters
 Category 2       : Other
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabSearch3A7F2B1C8D4E9F6A0B5C3D7E2F4A8B1C.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabSearch3A7F2B1C8D4E9F6A0B5C3D7E2F4A8B1C.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabSearch-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabSearch-MS
 
@@ -499,7 +499,7 @@ Category 1       : Change over time
 Category 2       : Comparison
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabSlopeChart5FB1FF5723A84889BF1A3770693D0356.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabSlopeChart5FB1FF5723A84889BF1A3770693D0356.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabSlopeChart-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabSlopeChart-MS
 
@@ -521,7 +521,7 @@ Category 1       : Distribution
 Category 2       : Comparison
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabViolinPlot9038B5824A7B4804BB556E9E9899D4DB.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabViolinPlot9038B5824A7B4804BB556E9E9899D4DB.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabViolinPlot-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabViolinPlot-MS
 
@@ -544,7 +544,7 @@ Category 1       : Distribution
 Category 2       : Infographics
 Industry 1       : Financial Services
 Industry 2       : Distribution
-PBIVIZ File      : briqlabWordCloud2AE4A77FBD7044FB88FC7936EDE34BCD.1.0.0.0.pbiviz
+PBIVIZ File      : briqlabWordCloud2AE4A77FBD7044FB88FC7936EDE34BCD.1.0.0.1.pbiviz
 PBIVIZ Location  : C:\Users\Abhijit\BriqlabVisuals\briqlabWordCloud-MS\dist\
 GitHub URL       : https://github.com/abhijitbriqbi/powerbi-visuals/tree/certification/briqlabWordCloud-MS
 
