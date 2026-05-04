@@ -149,20 +149,9 @@ export class Visual implements IVisual {
                 this.root.addEventListener("contextmenu", (e: MouseEvent) => {
                     e.preventDefault();
                     this.selMgr.showContextMenu(
-                        null as unknown as powerbi.visuals.ISelectionId,
+                        {} as powerbi.visuals.ISelectionId,
                         { x: e.clientX, y: e.clientY }
                     );
-                });
-                this.root.addEventListener("mousemove", (e: MouseEvent) => {
-                    this.tooltipSvc.show({
-                        dataItems: [{ displayName: "Briqlab Word Cloud", value: "" }],
-                        identities: [],
-                        coordinates: [e.clientX, e.clientY],
-                        isTouchEvent: false
-                    });
-                });
-                this.root.addEventListener("mouseleave", () => {
-                    this.tooltipSvc.hide({ isTouchEvent: false, immediately: false });
                 });
             }
             this.vp       = options.viewport;
@@ -265,24 +254,55 @@ export class Visual implements IVisual {
         }
     }
 
+    private applyViewportBounds(): void {
+        const w = Math.max(1, this.vp.width);
+        const h = Math.max(1, this.vp.height);
+        // Root element: must clip so nothing bleeds outside the visual frame
+        this.root.style.position = "relative";
+        this.root.style.overflow = "hidden";
+        this.root.style.width    = `${w}px`;
+        this.root.style.height   = `${h}px`;
+        // Content layer
+        this.contentEl.style.cssText =
+            `position:absolute;top:0;left:0;width:${w}px;height:${h}px;overflow:hidden;`;
+        // Chart layer
+        this.chartEl.style.position = "relative";
+        this.chartEl.style.overflow = "hidden";
+        this.chartEl.style.width    = `${w}px`;
+        this.chartEl.style.height   = `${h}px`;
+    }
+
     private renderChart(wordEntries: WordEntry[], fontFamily: string, getColor: (e: WordEntry, r: number) => string, hasSentiment: boolean): void {
         while (this.chartEl.firstChild) this.chartEl.removeChild(this.chartEl.firstChild);
 
-        const width  = this.vp.width;
-        const height = this.vp.height;
+        const width  = Math.max(1, this.vp.width);
+        const height = Math.max(1, this.vp.height);
         const maxFS  = this.settings.wordSettings.maxFontSize.value ?? 60;
 
-        this.chartEl.style.width    = `${width}px`;
-        this.chartEl.style.height   = `${height}px`;
-        this.chartEl.style.position = "relative";
+        // Apply viewport bounds to all container layers (fixes resize/minimize clipping)
+        this.applyViewportBounds();
+
+        // Minimum-size guard — avoids garbled layout in tiny tiles
+        if (width < 60 || height < 40) {
+            const tiny = this.mkDiv("briq-too-small");
+            tiny.style.cssText =
+                `display:flex;align-items:center;justify-content:center;` +
+                `width:${width}px;height:${height}px;font-size:11px;color:#94A3B8;`;
+            tiny.textContent = "…";
+            this.chartEl.appendChild(tiny);
+            return;
+        }
 
         const visual = this.mkDiv("briq-visual-content");
-        visual.style.cssText = "position:absolute;top:0;left:0;";
-        visual.style.width   = `${width}px`;
-        visual.style.height  = `${height}px`;
+        visual.style.cssText =
+            `position:absolute;top:0;left:0;width:${width}px;height:${height}px;overflow:hidden;`;
         this.chartEl.appendChild(visual);
 
-        const svg = d3.select(visual).append("svg").attr("width",width).attr("height",height);
+        // SVG: explicit overflow hidden so spiral-placed words outside bounds are clipped
+        const svg = d3.select(visual).append("svg")
+            .attr("width", width).attr("height", height)
+            .style("overflow", "hidden")
+            .style("display", "block");
 
         const tooltip = this.mkDiv("briq-tooltip");
         tooltip.style.display = "none";
@@ -322,10 +342,20 @@ export class Visual implements IVisual {
                 tooltip.style.display = "block";
                 tooltip.style.left = `${event.offsetX+10}px`;
                 tooltip.style.top  = `${event.offsetY-10}px`;
+                // PBI tooltip service for MS certification (1180.2.2.2)
+                const tipItems: powerbi.extensibility.VisualTooltipDataItem[] = [
+                    { displayName: d.text, value: d.weight.toLocaleString() },
+                    ...(hasSentiment ? [{ displayName: "Sentiment", value: d.sentiment.toFixed(2) }] : []),
+                ];
+                self.tooltipSvc.show({ dataItems: tipItems, identities: [d.selectionId], coordinates: [event.clientX, event.clientY], isTouchEvent: false });
             })
-            .on("mousemove", function(event: MouseEvent) {
+            .on("mousemove", function(event: MouseEvent, d: WordEntry) {
                 tooltip.style.left = `${event.offsetX+10}px`;
                 tooltip.style.top  = `${event.offsetY-10}px`;
+                const tipItems: powerbi.extensibility.VisualTooltipDataItem[] = [
+                    { displayName: d.text, value: d.weight.toLocaleString() },
+                ];
+                self.tooltipSvc.show({ dataItems: tipItems, identities: [d.selectionId], coordinates: [event.clientX, event.clientY], isTouchEvent: false });
             })
             .on("mouseout", function(_event: MouseEvent, d: WordEntry) {
                 wordTexts.style("opacity","1");
@@ -334,6 +364,7 @@ export class Visual implements IVisual {
                     return wd.rotation !== 0 ? `translate(${tx},${ty}) rotate(${wd.rotation})` : `translate(${tx},${ty})`;
                 });
                 tooltip.style.display = "none";
+                self.tooltipSvc.hide({ isTouchEvent: false, immediately: false });
                 void d;
             })
             .on("click", function(event: MouseEvent, d: WordEntry) {
@@ -368,7 +399,27 @@ export class Visual implements IVisual {
 
     private renderEmpty(msg: string): void {
         while (this.chartEl.firstChild) this.chartEl.removeChild(this.chartEl.firstChild);
-        const el = this.mkDiv("briq-empty-state"); el.textContent = msg; this.chartEl.appendChild(el);
+        // Keep containers sized/clipped even when no data (fixes resize on empty state)
+        this.applyViewportBounds();
+        const wrap = this.mkDiv("briq-empty-state");
+        wrap.style.flexDirection = "column";
+        wrap.style.gap = "6px";
+        const title = document.createElement("div");
+        title.style.cssText = "font-weight:600;font-size:13px;color:#374151";
+        title.textContent = "Briqlab Word Cloud";
+        const hint = document.createElement("div");
+        hint.style.cssText = "font-size:11px;color:#94A3B8;line-height:1.7;text-align:center";
+        hint.innerHTML = [
+            msg,
+            "<br>Tips:",
+            "• <b>Word</b> — text category field (required)",
+            "• <b>Weight</b> — numeric measure controlling word size (required)",
+            "• <b>Sentiment</b> — optional measure for colour coding",
+            "• Click a word to cross-filter; Ctrl+click for multi-select",
+        ].join("<br>");
+        wrap.appendChild(title);
+        wrap.appendChild(hint);
+        this.chartEl.appendChild(wrap);
     }
 
     private handleProKey(): void {

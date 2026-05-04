@@ -9,6 +9,7 @@ import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructor
 import VisualUpdateOptions      = powerbi.extensibility.visual.VisualUpdateOptions;
 import IVisual                  = powerbi.extensibility.visual.IVisual;
 import IVisualHost              = powerbi.extensibility.visual.IVisualHost;
+import ISelectionId             = powerbi.visuals.ISelectionId;
 
 import { VisualFormattingSettingsModel } from "./settings";
 import { checkMicrosoftLicence, resetLicenceCache } from "./licenceManager";
@@ -54,7 +55,8 @@ export class Visual implements IVisual {
     private keyCache: Map<string, boolean> = new Map();
     private trialStart = 0;
 
-    private flows: { source: string; destination: string; value: number }[] = [];
+    private flows: { source: string; destination: string; value: number; selectionId: ISelectionId }[] = [];
+    private selectedNodeIds: Set<string> = new Set();
 
     constructor(options: VisualConstructorOptions) {
         this.host   = options.host;
@@ -119,20 +121,9 @@ export class Visual implements IVisual {
                 this.root.addEventListener("contextmenu", (e: MouseEvent) => {
                     e.preventDefault();
                     this.selMgr.showContextMenu(
-                        null as unknown as powerbi.visuals.ISelectionId,
+                        {} as powerbi.visuals.ISelectionId,
                         { x: e.clientX, y: e.clientY }
                     );
-                });
-                this.root.addEventListener("mousemove", (e: MouseEvent) => {
-                    this.tooltipSvc.show({
-                        dataItems: [{ displayName: "Briqlab Flow Sankey", value: "" }],
-                        identities: [],
-                        coordinates: [e.clientX, e.clientY],
-                        isTouchEvent: false
-                    });
-                });
-                this.root.addEventListener("mouseleave", () => {
-                    this.tooltipSvc.hide({ isTouchEvent: false, immediately: false });
                 });
             }
             this.vp = options.viewport;
@@ -153,7 +144,10 @@ export class Visual implements IVisual {
                             this.flows.push({
                                 source:      String(srcCol.values[i] ?? ""),
                                 destination: String(dstCol.values[i] ?? ""),
-                                value: v
+                                value: v,
+                                selectionId: this.host.createSelectionIdBuilder()
+                                    .withCategory(srcCol, i)
+                                    .createSelectionId()
                             });
                         }
                     }
@@ -198,26 +192,55 @@ export class Visual implements IVisual {
         const minPct     = s.layoutSettings.minLabelPct.value ?? 5;
         const fontFam    = String(s.layoutSettings.fontFamily?.value?.value ?? "Segoe UI");
 
-        this.svgEl.attr("width", width).attr("height", height);
+        // Fix resize: root clips, content is scrollable so bars are never hidden
+        this.root.style.position = "relative";
+        this.root.style.overflow = "hidden";
+        this.root.style.width    = `${width}px`;
+        this.root.style.height   = `${height}px`;
+        this.contentEl.style.cssText =
+            `position:absolute;top:0;left:0;width:${width}px;height:${height}px;overflow:auto;`;
         this.svgEl.selectAll("*").remove();
 
-        // ── Empty state ────────────────────────────────────────────────────────
+        // ── Empty / landing state ──────────────────────────────────────────────
         if (this.flows.length === 0) {
-            this.svgEl.append("text")
-                .attr("x", width/2).attr("y", height/2)
-                .attr("text-anchor","middle").attr("dominant-baseline","middle")
-                .attr("class","sankey-empty").attr("font-family", fontFam)
-                .text("Add Source, Destination & Value fields");
+            this.svgEl.attr("width", width).attr("height", height).style("overflow", "hidden");
+            const tips = [
+                "Briqlab Flow Sankey",
+                "──────────────────────────────",
+                "1. Add a Source category field",
+                "2. Add a Destination category field",
+                "3. Add a numeric Value measure",
+                "Nodes are auto-coloured; click a node to cross-filter other visuals.",
+            ];
+            tips.forEach((line, i) => {
+                this.svgEl.append("text")
+                    .attr("x", width / 2).attr("y", height / 2 - 60 + i * 18)
+                    .attr("text-anchor", "middle").attr("dominant-baseline", "middle")
+                    .attr("class", "sankey-empty").attr("font-family", fontFam)
+                    .attr("font-size", i === 0 ? "13px" : "11px")
+                    .attr("font-weight", i === 0 ? "600" : "400")
+                    .text(line);
+            });
             return;
         }
 
         const pad = { t: 24, r: 120, b: 24, l: 120 };
         const innerW = width  - pad.l - pad.r;
-        const innerH = height - pad.t - pad.b;
+
+        // Compute SVG height: expand beyond viewport if needed so scroll bars expose hidden bars
+        const srcNames0 = Array.from(new Set(this.flows.map(f => f.source)));
+        const dstNames0 = Array.from(new Set(this.flows.map(f => f.destination)));
+        const minNodeH  = 30; // px — minimum comfortable bar height
+        const maxCount  = Math.max(srcNames0.length, dstNames0.length);
+        const minSvgH   = pad.t + pad.b + maxCount * minNodeH + Math.max(0, maxCount - 1) * nodeGap;
+        const svgH      = Math.max(height, minSvgH);
+        this.svgEl.attr("width", width).attr("height", svgH).style("overflow", "visible");
+
+        const innerH = svgH - pad.t - pad.b;
 
         // ── Build node maps ────────────────────────────────────────────────────
-        const srcNames = Array.from(new Set(this.flows.map(f => f.source)));
-        const dstNames = Array.from(new Set(this.flows.map(f => f.destination)));
+        const srcNames = srcNames0;
+        const dstNames = dstNames0;
         const allNames = Array.from(new Set([...srcNames, ...dstNames]));
         const colorMap = new Map<string, string>();
         allNames.forEach((n, i) => colorMap.set(n, CHART_COLORS[i % CHART_COLORS.length]));
@@ -316,26 +339,64 @@ export class Visual implements IVisual {
                     .text(`${lk.pct.toFixed(1)}%`);
             }
 
-            // Hover tooltip
-            path.append("title").text(`${lk.source} → ${lk.target}: ${fmtNum(lk.value)} (${lk.pct.toFixed(1)}%)`);
-
-            path.on("mouseover", function() {
+            // Dynamic PBI tooltip + highlight on hover
+            const tooltipItems: powerbi.extensibility.VisualTooltipDataItem[] = [
+                { displayName: "Flow",  value: `${lk.source} → ${lk.target}` },
+                { displayName: "Value", value: fmtNum(lk.value) },
+                { displayName: "Share", value: `${lk.pct.toFixed(1)}%` },
+            ];
+            const self = this;
+            path.on("mouseover", function(event: MouseEvent) {
                 linksG.selectAll(".sankey-link").style("opacity", 0.15);
                 d3.select(this).style("opacity", 1);
+                self.tooltipSvc.show({ dataItems: tooltipItems, identities: [], coordinates: [event.clientX, event.clientY], isTouchEvent: false });
+            }).on("mousemove", function(event: MouseEvent) {
+                self.tooltipSvc.show({ dataItems: tooltipItems, identities: [], coordinates: [event.clientX, event.clientY], isTouchEvent: false });
             }).on("mouseout", function() {
                 linksG.selectAll(".sankey-link").style("opacity", null);
+                self.tooltipSvc.hide({ isTouchEvent: false, immediately: false });
             });
         });
 
         // ── Draw nodes ─────────────────────────────────────────────────────────
         const drawNodes = (nodes: SankeyNode[], labelRight: boolean) => {
             nodes.forEach(n => {
+                // Flows involving this node — used for filter-out selection
+                const nodeFlows   = this.flows.filter(f => f.source === n.id || f.destination === n.id);
+                const nodeSelIds  = nodeFlows.map(f => f.selectionId);
+                const nodeTipItems: powerbi.extensibility.VisualTooltipDataItem[] = [
+                    { displayName: n.id, value: fmtNum(nodeTotal.get(n.id) ?? 0) },
+                ];
+
                 this.svgEl.append("rect")
                     .attr("x", n.x).attr("y", n.y)
                     .attr("width", nodeW).attr("height", Math.max(4, n.h))
                     .attr("rx", 3).attr("ry", 3)
                     .attr("fill", n.color)
-                    .attr("class","sankey-node");
+                    .attr("class","sankey-node")
+                    .style("cursor","pointer")
+                    // Filter out on click (1180.2.2.3)
+                    .on("click", (event: MouseEvent) => {
+                        event.stopPropagation();
+                        if (nodeSelIds.length > 0) this.selMgr.select(nodeSelIds);
+                    })
+                    .on("contextmenu", (event: MouseEvent) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        this.selMgr.showContextMenu(
+                            nodeSelIds[0] ?? ({} as ISelectionId),
+                            { x: event.clientX, y: event.clientY }
+                        );
+                    })
+                    .on("mouseover", (event: MouseEvent) => {
+                        this.tooltipSvc.show({ dataItems: nodeTipItems, identities: nodeSelIds, coordinates: [event.clientX, event.clientY], isTouchEvent: false });
+                    })
+                    .on("mousemove", (event: MouseEvent) => {
+                        this.tooltipSvc.show({ dataItems: nodeTipItems, identities: nodeSelIds, coordinates: [event.clientX, event.clientY], isTouchEvent: false });
+                    })
+                    .on("mouseout", () => {
+                        this.tooltipSvc.hide({ isTouchEvent: false, immediately: false });
+                    });
 
                 const lx = labelRight ? n.x + nodeW + 6 : n.x - 6;
                 const anchor = labelRight ? "start" : "end";
@@ -359,6 +420,9 @@ export class Visual implements IVisual {
 
         drawNodes(srcNodes, false);
         drawNodes(dstNodes, true);
+
+        // Click on SVG background clears selection
+        this.svgEl.on("click", () => { this.selMgr.clear(); });
     }
 
     // ── MS AppSource licence UI ──────────────────────────────────────────────
